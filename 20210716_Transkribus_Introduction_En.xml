@@ -1,27 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+@@ -3,7 +3,7 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="tei_all_ja_421.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>How To Transcribe Documents with Transkribus – Introduction</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
+@ -15,299 +15,345 @@
             <p>https://readcoop.eu/transkribus/howto/how-to-transcribe-documents-with-transkribus-introduction/</p>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
   <text>
+   </teiHeader>
+   <text>
       <body>
          <p>
             This guide explains the process of transcribing documents in Transkribus.
+         <p xml:lang="en"> This guide explains the process of transcribing documents in Transkribus.
+            These transcripts can be used: As training data for a Handwritten Text Recognition
+            (HTR+) model which is capable of automatically transcribing your documents. As the basis
+            for a digital scholarly edition.
             
             These transcripts can be used:
+            There is a simple three-step process for transcribing a
+            document in Transkribus: Step 1: Uploading Upload your documents to the Transkribus
+            platform Step 2: Segmentation Run the automated segmentation tool to create baselines
+            for your document. Step 3: Transcription Transcribe the text in the segmented lines.
+            This form of simple transcription is sufficient for training HTR technology. Note: HTR
+            can work on both handwritten and printed documents. The efficiency of a model will
+            depend on the quality of the training material (your manual transcription), the quality
+            of the images and on how neat or messy the writing is. There are also advanced
+            transcription options for those working on scholarly editions. You can adjust the
+            reading order of the text, use historical characters, add tags and metadata, expand
+            abbreviations and more. </p>
+         <p xml:lang="jp"><s>このガイドでは、Transkribusで文書を翻刻するプロセスを説明します。</s>
+            <s>これらの翻刻は以下のように使用できます。</s>
+            文書を自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。
+            デジタル学術出版物の基礎資料として。
             
             As training data for a Handwritten Text Recognition (HTR+) model which is capable of automatically transcribing your documents.
             As the basis for a digital scholarly edition.
@@ -40,13 +57,27 @@
             
             There are also advanced transcription options for those working on scholarly editions. You can adjust the reading order of the text, use historical characters, add tags and metadata, expand abbreviations and more. 
          </p>
+            Transkribusで文書を翻刻するには、3つのステップがあります。
+            ステップ1：アップロード　文書をTranskribusプラットフォームにアップロードします。
+            ステップ2：セグメンテーション 自動セグメンテーションツールを実行して、文書のベースラインを作成します。
+            ステップ3: 翻刻　セグメンテーションされた行のテキストを翻刻します。
+            この形式の単純な翻刻は、HTR技術のトレーニングには十分です。
+            注：HTRは、手書きの文書と印刷された文書の両方に対応できます。モデルの効率は、学習教材（あなたが手入力する翻刻）の質、画像の質、そして文字がきちんとしているか・乱れているかに左右されます。
+            また、学術編集版を扱う人のための高度な翻刻オプションもあります。テキストの読み順の調整、歴史的な文字の使用、タグやメタデータの追加、略語の展開などが可能です。 </p>
          <div1 n="1">
             <head>Introduction</head><lb/>
-            <p>これは、テスト用です。
+            <p>
                In order to be able to run the necessary tools on your documents they need to reside on the Transkribus server. This means that you need to upload them to Transkribus.
                Note: All collections and documents in Transkribus are private. Only users authorised by you are able to see your documents. They are not made available to the public.
                To upload click on the “Import Documents” button in the Main menu. 
             </p>
+            <head>Introduction</head>
+            <lb/>
+            <p> In order to be able to run the necessary tools on your documents they need to reside
+               on the Transkribus server. This means that you need to upload them to Transkribus.
+               Note: All collections and documents in Transkribus are private. Only users authorised
+               by you are able to see your documents. They are not made available to the public. To
+               upload click on the “Import Documents” button in the Main menu. </p>
          </div1>
          <div1 n="2">
             <head>Upload documents to Transkribus</head><lb/>
@@ -59,6 +90,15 @@
                Upload via FTP
                This is suitable if you want to upload several large documents
                You can upload image files, as well as PDF-documents with this option
+            <head>Upload documents to Transkribus</head>
+            <lb/>
+            <p> You have four options to upload documents: Upload single document from a local
+               folder: This option allows you to upload documents up to 500 MB In order to choose
+               this option choose “Upload Single Document” Please make that the files to be uploaded
+               reside in an extra folder. When choosing the files for the upload you won’t be able
+               to see the files in the folder. That is normal in this case. Just mark the folder and
+               confirm with “OK”. Upload via FTP This is suitable if you want to upload several
+               large documents You can upload image files, as well as PDF-documents with this option
                Please make sure the PDF-files are not inside a folder when using the FTP-upload
                Upload via URL of DFG Viewer METS
                This allows you to upload documents directly from repositories which support the DFG (Deutsche Forschungsgemeinschaft – German Science Funds) Viewer
@@ -79,6 +119,22 @@
                Click on the folder icon with the small red circle “Delete the selected documents from Transkribus”.
                The deleted document(s) will reside in the recycle bin (icon “contains deleted documents”) for two weeks. If you have deleted a document by mistake you can contact us (info@readcoop.eu) and we will be able to reactivate the document within these two weeks. After this, the document will be permanently deleted.
             </p>
+               Upload via URL of DFG Viewer METS This allows you to upload documents directly from
+               repositories which support the DFG (Deutsche Forschungsgemeinschaft – German Science
+               Funds) Viewer Extract and upload images from PDF This option is suitable for images
+               you want to upload which reside in a PDF-document. If those PDF-documents are of big
+               size, please use the FTP-upload. Also, if you have JP2000 images in your PDFs it
+               makes sense to go for the FTP-option. Add pages to an already existing document in
+               Transkribus: Load the document, you would like to add pages to in Transkribus Open
+               the document manager Select the document again by clicking on it’s name in the
+               “Document Manager”-window Click on the green circle icon next to “Add new page(s)”
+               Search and add the new pages via the directory Delete documents from your collection:
+               Select the document in the collection overview within the “Server”-tab Click on the
+               folder icon with the small red circle “Delete the selected documents from
+               Transkribus”. The deleted document(s) will reside in the recycle bin (icon “contains
+               deleted documents”) for two weeks. If you have deleted a document by mistake you can
+               contact us (info@readcoop.eu) and we will be able to reactivate the document within
+               these two weeks. After this, the document will be permanently deleted. </p>
          </div1>
          <div1 n="3">
             <head>Segmentation – Layout Analysis</head><lb/>
@@ -88,6 +144,13 @@
                For the HTR to work, the text and image need to be connected.
                All the segmented elements, such as printspace, text region, line region or baseline are stored in the PAGE file with their coordinates.
             </p>
+            <head>Segmentation – Layout Analysis</head>
+            <lb/>
+            <p> Once you have uploaded your documents to Transkribus, you are ready to start
+               segmentation. In order to transcribe your documents in Transkribus, they must be
+               segmented into text regions, lines and baselines. For the HTR to work, the text and
+               image need to be connected. All the segmented elements, such as printspace, text
+               region, line region or baseline are stored in the PAGE file with their coordinates. </p>
             <div2 n="1">
                <head>Viewing profiles</head><lb/>
                <p>
@@ -97,6 +160,16 @@
                   The “Transcription” profile means that the Text Editor field will be displayed, allowing you to transcribe your document.
                   Of course you can simply use the “default” profile to perform either task.
                </p>
+               <head>Viewing profiles</head>
+               <lb/>
+               <p> Viewing profiles are available to help you with the tasks of segmentation and
+                  transcription. You can select between viewing profiles for “Segmentation” and
+                  “Transcription” by clicking the “Profiles” button in the Main menu. The
+                  “Segmentation” profile means that baselines are displayed in red, making it easier
+                  to spot any errors resulting from the automated segmentation process. The
+                  “Transcription” profile means that the Text Editor field will be displayed,
+                  allowing you to transcribe your document. Of course you can simply use the
+                  “default” profile to perform either task. </p>
             </div2>
             <div2 n="2">
                <head>Automatically detect text regions, lines and baselines</head><lb/>
@@ -109,6 +182,17 @@
                   Click the “Run” button.
                   If you would like to draw the text regions by hand and then search for the baselines in these regions, untick the “Find Text Regions”-option before starting the layout analysis. How to draw text regions is explained further down in the text.
                </p>
+               <head>Automatically detect text regions, lines and baselines</head>
+               <lb/>
+               <p> Select the “Segmentation” viewing profile from the Main menu. Select the “Tools”
+                  tab on the left side of the screen and go to the “Layout Analysis” section. Under
+                  “Method:” select “CITlab Advanced” (already preselected). Select if you would like
+                  to run the layout analysis only for the current page, for distinct pages, or for
+                  the whole document. Make sure “Find Text Regions” is selected. Click the “Run”
+                  button. If you would like to draw the text regions by hand and then search for the
+                  baselines in these regions, untick the “Find Text Regions”-option before starting
+                  the layout analysis. How to draw text regions is explained further down in the
+                  text. </p>
             </div2>
             <div2 n="3">
                <head>Correcting the results of automated segmentation</head><lb/>
@@ -117,6 +201,14 @@
                   If you are working on a scholarly edition where a higher degree of accuracy is required, it is possible to manually correct the text as in the examples below.
                   All tools for corrections on the layout analysis can be found in the “Canvas”-menu left of the image. You can check their functionality by hovering over the icon.
                </p>
+               <head>Correcting the results of automated segmentation</head>
+               <lb/>
+               <p> Note: if you are training a HTR model, the position of text regions does not need
+                  to be completely exact and the reading order of the text is not relevant. If you
+                  are working on a scholarly edition where a higher degree of accuracy is required,
+                  it is possible to manually correct the text as in the examples below. All tools
+                  for corrections on the layout analysis can be found in the “Canvas”-menu left of
+                  the image. You can check their functionality by hovering over the icon. </p>
                <div3 n="1">
                   <head>A line has been missed or added by mistake</head><lb/>
                   <p>
@@ -124,6 +216,11 @@
                      Click inside the region so that it is highlighted.
                      Drag the border of the text region as needed.
                   </p>
+                  <head>A line has been missed or added by mistake</head>
+                  <lb/>
+                  <p> In the example above the first line had been missed by the program. If you
+                     would like to add it to the existing text region: Click inside the region so
+                     that it is highlighted. Drag the border of the text region as needed. </p>
                </div3>
                <div3 n="2">
                   <head>A marginal note needs to be split into a separate text region</head><lb/>
@@ -133,6 +230,12 @@
                      The “V” button splits a text region vertically.
                      The “L-button” allows you to split a text region with customisable line.
                   </p>
+                  <head>A marginal note needs to be split into a separate text region</head>
+                  <lb/>
+                  <p> If you need to split one region into two, you can do this with buttons in the
+                     Canvas menu. As shown in Figure 6, the “H-button” splits a text region
+                     horizontally. The “V” button splits a text region vertically. The “L-button”
+                     allows you to split a text region with customisable line. </p>
                </div3>
                <div3 n="3">
                   <head>Remove a region which is not needed</head><lb/>
@@ -140,6 +243,11 @@
                      In the example above two regions are overlapping, so one can be deleted.
                      Click on the text region you wish to delete, and click the red “Remove a shape” button.
                   </p>
+                  <head>Remove a region which is not needed</head>
+                  <lb/>
+                  <p> In the example above two regions are overlapping, so one can be deleted. Click
+                     on the text region you wish to delete, and click the red “Remove a shape”
+                     button. </p>
                </div3>
                <div3 n="4">
                   <head>Merge two regions</head><lb/>
@@ -148,6 +256,12 @@
                      Hold down the “CTRL” button on your keyboard and click on both text regions.
                      Click the “Merges the selected shapes” button in the Canvas menu.
                   </p>
+                  <head>Merge two regions</head>
+                  <lb/>
+                  <p> Sometimes the program creates two text regions where only one is needed. In
+                     this case you can easily merge the two together. Hold down the “CTRL” button on
+                     your keyboard and click on both text regions. Click the “Merges the selected
+                     shapes” button in the Canvas menu. </p>
                </div3>
                <div3 n="5">
                   <head>Correct baselines</head><lb/>
@@ -157,6 +271,15 @@
                      You can also delete a baseline and draw a new one from scratch. Click the “+BL” button in the Canvas menu. Click once to start drawing your baseline and double-click to finish your line.
                      Note: Baselines are most important for HTR; line regions do not need to be corrected.
                   </p>
+                  <head>Correct baselines</head>
+                  <lb/>
+                  <p> Of course it is also possible to correct the baselines in your document. As
+                     with the text regions, click on a baseline and you can drag the parts of the
+                     line, split a line into two or merge two lines together. You can also delete a
+                     baseline and draw a new one from scratch. Click the “+BL” button in the Canvas
+                     menu. Click once to start drawing your baseline and double-click to finish your
+                     line. Note: Baselines are most important for HTR; line regions do not need to
+                     be corrected. </p>
                </div3>
             </div2>
          </div1>
@@ -168,6 +291,16 @@
                Transcribe the text according to the language of your source document. Use the characters of your keyboard.
                You can have more than one person working on a document but they should not work on the same page simultaneously. You can let other Transkribus users see your documents by clicking the “User Manager” button in the “Server” tab.
             </p>
+            <head>Simple transcription – for HTR+ training</head>
+            <lb/>
+            <p> Select the “Transcription” viewing profile from the Main menu. You will see the Text
+               Editor field below the image: For each line/baseline in the image you will find a
+               corresponding line in the Text Editor. The image and the text are connected in this
+               way. Transcribe the text according to the language of your source document. Use the
+               characters of your keyboard. You can have more than one person working on a document
+               but they should not work on the same page simultaneously. You can let other
+               Transkribus users see your documents by clicking the “User Manager” button in the
+               “Server” tab. </p>
          </div1>
          <div1 n="5">
             <head>Train a HTR model</head><lb/>
@@ -176,9 +309,22 @@
                We recommend that you start the trainig process with between 5,000 and 15,000 words (around 25-75 pages) of transcribed material. If you are working with printed rather than handwritten text, a smaller amount of training data is usually required.
                Also using a base model can reduce the required training material. As base model you can use one of the publicly available models in Transkribus (please make sure the writing is at least similar to the one in your documents [e.g. of a similar date, the same language and/or style]) or one of your previously trained models – provided it is good enough to serve as a base model.
             </p>
+            <head>Train a HTR model</head>
+            <lb/>
+            <p> If you wish to train a HTR model to recognise your documents, this simple
+               transcription is sufficient. We recommend that you start the trainig process with
+               between 5,000 and 15,000 words (around 25-75 pages) of transcribed material. If you
+               are working with printed rather than handwritten text, a smaller amount of training
+               data is usually required. Also using a base model can reduce the required training
+               material. As base model you can use one of the publicly available models in
+               Transkribus (please make sure the writing is at least similar to the one in your
+               documents [e.g. of a similar date, the same language and/or style]) or one of your
+               previously trained models – provided it is good enough to serve as a base model. </p>
          </div1>
          <div1 n="6">
             <head>Advanced transcription – for a scholarly edition</head><lb/>
+            <head>Advanced transcription – for a scholarly edition</head>
+            <lb/>
 
             <div2 n="1">
                <head>Reading order</head><lb/>
@@ -200,6 +346,36 @@
                   The reading order will be rearranged according to the coordinates of the top left corner of a text or line region. After that, the lines should be in right order.
                   There can be issues with the reading order of newspaper columns and similar documents. E.g. the programme assigns a reading order based on the horizontal layout of lines on a page, rather than putting the lines in order by column. To fix this issue, use the “V” button in the Canvas menu to split the text region on the page into separate regions for each column. Once there is a separate text region for each column, the reading order should automatically update and be correct.
                </p>
+               <head>Reading order</head>
+               <lb/>
+               <p> Once a document has been segmented into text regions, lines and baselines, you
+                  may need to think about the reading order of the text (this is not relevant if the
+                  transcription should only serve as training material). Many handwritten documents
+                  include corrections and additions added by the author, or someone else. In a
+                  scholarly edition you want to keep the reading order and maybe also express the
+                  fact that this text was an addition. For this purpose all segmentation elements
+                  can be ordered according to a user-defined order. The default reading order
+                  follows the topology of the text or line regions. All shapes are ordered according
+                  to the coordinates of the top left corner of a text or line region. This
+                  mechanical reading order can be changed: Click on the “Item visibility” button in
+                  the Main menu, and you can then choose to show the reading order of text regions,
+                  lines, baselines (or words). Once you choose to show the reading order of text
+                  regions or lines, numbers will be displayed on the image of your document. By
+                  clicking on one of the numbers marking the reading order, it is possible to type
+                  in a new number and change the reading order accordingly. The same can be done by
+                  moving the segmentation elements in the “Layout” tab. In cases where the reading
+                  order of a page is completely incorrect, it is possible to reorder the text Make
+                  the line reading order visible as described above Click on the “Layout” tab on the
+                  left side of the screen Select the page or text region that you wish to reorder
+                  Click the “R” button The reading order will be rearranged according to the
+                  coordinates of the top left corner of a text or line region. After that, the lines
+                  should be in right order. There can be issues with the reading order of newspaper
+                  columns and similar documents. E.g. the programme assigns a reading order based on
+                  the horizontal layout of lines on a page, rather than putting the lines in order
+                  by column. To fix this issue, use the “V” button in the Canvas menu to split the
+                  text region on the page into separate regions for each column. Once there is a
+                  separate text region for each column, the reading order should automatically
+                  update and be correct. </p>
             </div2>
             <div2 n="2">
                <head>Reading order: Interline additions</head><lb/>
@@ -212,6 +388,16 @@
                   Split the line region with the “V” button in the Canvas menu exactly where the addition should be logically placed
                   Edit the reading order so that it is correct. Click on the number associated with each line region and then type the correct one.
                </p>
+               <head>Reading order: Interline additions</head>
+               <lb/>
+               <p> Interline additions are a frequent way in which text is added to a document. In
+                  order to generate the correct reading order, the following steps need to be
+                  performed manually: Click the “Item visibility” button in the Main menu Select
+                  “Show lines reading order” Select the baseline below the addition (if the addition
+                  is above the line). Split the line region with the “V” button in the Canvas menu
+                  exactly where the addition should be logically placed Edit the reading order so
+                  that it is correct. Click on the number associated with each line region and then
+                  type the correct one. </p>
             </div2>
             <div2 n="3">
                <head>Reading order: Additions as extra notes</head><lb/>
@@ -229,6 +415,32 @@
                   Option 3: You can connect the extra text region which contains the addition to the line where the addition belongs. To do this, select both text regions and then click the “Links two shapes” button in the “Structural” tab, within the “Metadata” tab.
                   Note: The linking will be part of the XML file but is currently not supported in the export formats.
                </p>
+               <head>Reading order: Additions as extra notes</head>
+               <lb/>
+               <p> Additions which appear as extra notes (e.g. at the margins of a page) should be
+                  handled in a similar way to interline additions. Note: Often such extra notes (or
+                  marginalia) are not part of the reading order but are “comments” and as such are
+                  on a different level to the primary reading order. It will therefore be sufficient
+                  to mark them as “marginalia” in the Metadata tab. Instructions on marking-up text
+                  can be found in the How to enrich transcribed documents with mark-up guide. But if
+                  the extra note is really an addition to the running text and needs to be added in
+                  the reading order then it can be done in the following ways: Option 1: The text
+                  region can be expanded so that all baselines of the addition are also part of the
+                  respective text region. Note: You can use either rather large text regions, or you
+                  may use polygonal text regions. For this purpose select the “Add point to selected
+                  shape” button from the Canvas menu. Following the movement of your mouse pointer
+                  you can add points to the original text region and expand the shape so that it
+                  also includes the addition. Afterwards the additional lines/baselines can be
+                  renumbered according to their correct reading order. Option 2: You can generate
+                  just one large text region for the whole page and do the line/baseline
+                  segmentation manually in the correct order. In this way you will get the correct
+                  reading order right from the beginning. Note: this may be the best option if you
+                  are dealing with a document which has a sophisticated layout with many additions,
+                  notes and deletions. Option 3: You can connect the extra text region which
+                  contains the addition to the line where the addition belongs. To do this, select
+                  both text regions and then click the “Links two shapes” button in the “Structural”
+                  tab, within the “Metadata” tab. Note: The linking will be part of the XML file but
+                  is currently not supported in the export formats. </p>
             </div2>
             <div2 n="4">
                <head>Transcription and Virtual Keyboards</head><lb/>
@@ -240,6 +452,19 @@
                   To add new Unicode characters, you use the green plus button.
                   In the text editor you can use “Backspace” to muve text one line up and “Ctrl” + “Return” to move text one line down.
                </p>
+               <head>Transcription and Virtual Keyboards</head>
+               <lb/>
+               <p> A transcription which will serve as a basis for a scholarly edition should make
+                  more data explicit to the user and offer more contextual data than a simple
+                  transcription. In this case not only machine readability (i.e. training data for
+                  the HTR engine) but also human readability of the text will play an important
+                  role. You can add special characters and Unicode symbols using the “Virtual
+                  keyboards” button in the Text Editor field. With the “Edit…” button it is possible
+                  to add shortcuts for frequently used characters and to add new Unicode characters.
+                  To create a shortcut, you just need to type it in the “Shortcut” column. To add
+                  new Unicode characters, you use the green plus button. In the text editor you can
+                  use “Backspace” to muve text one line up and “Ctrl” + “Return” to move text one
+                  line down. </p>
             </div2>
             <div2 n="5">
                <head>Diacritics and ligatures</head><lb/>
@@ -256,6 +481,35 @@
                   Note: Please take into account that this is an important decision and will affect the usability of the text in many ways. If you decide to go for a palaeographic transcription it will cause a lot more work than with a slightly normalized transcription.
                   Note: In printed texts (which can also be transcribed in Transkribus) the transcription of ligatures may play a role. Again the same rule can be applied: Though specific combinations of letters, such as “ft” are expressed with a specific grapheme where two graphemes are matched together, and though such ligatures can also be expressed with specific Unicode letters, we recommend transcribing them according to the dictionary.
                </p>
+               <head>Diacritics and ligatures</head>
+               <lb/>
+               <p> The correct transcription of diacritics and ligatures requires some expert
+                  knowledge. There are two main options for handling the correct transcription of
+                  these characters: Option 1: Slight normalisation according to dictionary The main
+                  rule to be applied here is the following: As long as you can clearly see the base
+                  character of a glyph and as long as the base character is also the one which is
+                  used in the dictionary to express this glyph, keep to the base character. Example
+                  1: LATIN SMALL LETTER Y will appear in many documents with an extra diacritical
+                  sign, indicating the history of this character coming from ii or ij. Therefore you
+                  find two dots or a something similar looking above the “y”. In simple transcripts
+                  you will transcribe this as LATIN SMALL LETTER Y since the base character is
+                  clearly visible. Example 2: LATIN SMALL LETTER S is expressed with two graphemes
+                  in most European historical scripts. We find therefore a clear distinction between
+                  LATIN SMALL LETTER S and LATIN SMALL LETTER LONG S. But although there is a clear
+                  distinction, a simple transcription would use LATIN SMALL LETTER S in both cases.
+                  Option 2: Palaeographic Transcription Philologists or palaeographers are not only
+                  interested in the correct transcription, but also in the historical appearance and
+                  development of graphemes. Therefore it might also be interesting to transcribe the
+                  above examples with full support of the Unicode character set or even by utilizing
+                  the private area of Unicode. Note: Please take into account that this is an
+                  important decision and will affect the usability of the text in many ways. If you
+                  decide to go for a palaeographic transcription it will cause a lot more work than
+                  with a slightly normalized transcription. Note: In printed texts (which can also
+                  be transcribed in Transkribus) the transcription of ligatures may play a role.
+                  Again the same rule can be applied: Though specific combinations of letters, such
+                  as “ft” are expressed with a specific grapheme where two graphemes are matched
+                  together, and though such ligatures can also be expressed with specific Unicode
+                  letters, we recommend transcribing them according to the dictionary. </p>
             </div2>
             <div2 n="6">
                <head>Punctuation marks</head><lb/>
@@ -267,6 +521,19 @@
                   In contrast to many transcription rules where punctuation marks are added and omitted according to a modern understanding we recommend to keep to the original punctuation marks.
                   If you want to add punctuation marks which do not appear in the original document you may use the “supplied” tag in the “Tagging” tab, within the “Metadata” tab to indicate that the punctuation mark was added by yourself.
                </p>
+               <head>Punctuation marks</head>
+               <lb/>
+               <p> Punctuation marks are transcribed in the same way as characters. Use the
+                  appropriate character on your keyboard and do not normalize or add punctuation
+                  marks. Typical punctuation marks are: modern characters such as dot, comma,
+                  semicolon, colon: “.”, “,”, “;”:” historical characters such as virgule (slash),
+                  or line fillers, etc. Note: Colons in historical texts are often used to mark
+                  abbreviated words. These should be transcribed as a colon. In contrast to many
+                  transcription rules where punctuation marks are added and omitted according to a
+                  modern understanding we recommend to keep to the original punctuation marks. If
+                  you want to add punctuation marks which do not appear in the original document you
+                  may use the “supplied” tag in the “Tagging” tab, within the “Metadata” tab to
+                  indicate that the punctuation mark was added by yourself. </p>
             </div2>
          </div1>
          <div1 n="7">
@@ -298,16 +565,35 @@
                MUFI (Medieval Unicode Font Initiative)
                
                This initiative has collected and systematized about 1512 characters which are especially recommended for the transcription of medieval documents. Note: Some of them are still in the “private” section of Unicode, therefore not officially available.
+            <head>References</head>
+            <lb/>
+            <p> To get an overview on scripts from Unicode: http://www.unicode.org/charts/ For
+               historical transcriptions the following extensions are of interest: Latin Extended-B:
+               http://www.unicode.org/charts/PDF/U0180.pdf Contains e.g.: Non-European and historic
+               Latin Phonetic and historic letters Additions for Slovenian and Croatian etc. Latin
+               Extended-C: http://www.unicode.org/charts/PDF/U2C60.pdf Contains e.g.: Orthographic
+               Latin additions etc. Latin Extended-D: http://www.unicode.org/charts/PDF/UA720.pdf
+               Contains e.g.: Medievalist additions Insular and Celtic letters Ancient Roman
+               epigraphic letters etc. MUFI (Medieval Unicode Font Initiative) This initiative has
+               collected and systematized about 1512 characters which are especially recommended for
+               the transcription of medieval documents. Note: Some of them are still in the
+               “private” section of Unicode, therefore not officially available.
                http://folk.uib.no/hnooh/mufi/
                http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-4-0.pdf
             </p>
+               http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-4-0.pdf </p>
          </div1>
          <div1 n="8">
             <head>Credits</head><lb/>
             <p>
                We would like to thank the many users who have contributed their feedback to help improve the Transkribus software.
             </p>
+            <head>Credits</head>
+            <lb/>
+            <p> We would like to thank the many users who have contributed their feedback to help
+               improve the Transkribus software. </p>
          </div1>
       </body>
   </text>
+   </text>
 </TEI>
