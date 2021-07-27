@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="tei_all_ja_421.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -21,9 +20,7 @@
          <p xml:lang="en"> This guide explains the process of transcribing documents in Transkribus.
             These transcripts can be used: As training data for a Handwritten Text Recognition
             (HTR+) model which is capable of automatically transcribing your documents. As the basis
-            for a digital scholarly edition.
-            
-            There is a simple three-step process for transcribing a
+            for a digital scholarly edition. There is a simple three-step process for transcribing a
             document in Transkribus: Step 1: Uploading Upload your documents to the Transkribus
             platform Step 2: Segmentation Run the automated segmentation tool to create baselines
             for your document. Step 3: Transcription Transcribe the text in the segmented lines.
@@ -34,26 +31,28 @@
             transcription options for those working on scholarly editions. You can adjust the
             reading order of the text, use historical characters, add tags and metadata, expand
             abbreviations and more. </p>
-         <p xml:lang="jp"><s>このガイドでは、Transkribusで文書を翻刻するプロセスを説明します。</s>
-            <s>これらの翻刻は以下のように使用できます。</s>
-            文書を自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。
-            デジタル学術出版物の基礎資料として。
-            
-            Transkribusで文書を翻刻するには、3つのステップがあります。
-            ステップ1：アップロード　文書をTranskribusプラットフォームにアップロードします。
-            ステップ2：セグメンテーション 自動セグメンテーションツールを実行して、文書のベースラインを作成します。
-            ステップ3: 翻刻　セグメンテーションされた行のテキストを翻刻します。
+         <p xml:lang="jp"><s>このガイドでは、Transkribusでドキュメントを翻刻するプロセスを説明します。</s>
+            <s>これらの翻刻は以下のように使用できます。</s> ドキュメントを自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。
+            デジタル学術出版物の基礎資料として。 Transkribusでドキュメントを翻刻するには、3つのステップがあります。
+            ステップ1：アップロード　ドキュメントをTranskribusプラットフォームにアップロードします。 ステップ2：セグメンテーション
+            自動セグメンテーションツールを実行して、ドキュメントのベースラインを作成します。 ステップ3: 翻刻　セグメンテーションされた行のテキストを翻刻します。
             この形式の単純な翻刻は、HTR技術のトレーニングには十分です。
-            注：HTRは、手書きの文書と印刷された文書の両方に対応できます。モデルの効率は、学習教材（あなたが手入力する翻刻）の質、画像の質、そして文字がきちんとしているか・乱れているかに左右されます。
+            注：HTRは、手書きのドキュメントと印刷されたドキュメントの両方に対応できます。モデルの効率は、学習教材（あなたが手入力する翻刻）の質、画像の質、そして文字がきちんとしているか・乱れているかに左右されます。
             また、学術編集版を扱う人のための高度な翻刻オプションもあります。テキストの読み順の調整、歴史的な文字の使用、タグやメタデータの追加、略語の展開などが可能です。 </p>
          <div1 n="1">
-            <head>Introduction</head>
+            <head xml:lang="en">Introduction</head>
+            <head xml:lang="jp">はじめに</head>
             <lb/>
-            <p> In order to be able to run the necessary tools on your documents they need to reside
-               on the Transkribus server. This means that you need to upload them to Transkribus.
-               Note: All collections and documents in Transkribus are private. Only users authorised
-               by you are able to see your documents. They are not made available to the public. To
-               upload click on the “Import Documents” button in the Main menu. </p>
+            <p xml:lang="en"> In order to be able to run the necessary tools on your documents they
+               need to reside on the Transkribus server. This means that you need to upload them to
+               Transkribus. Note: All collections and documents in Transkribus are private. Only
+               users authorised by you are able to see your documents. They are not made available
+               to the public. To upload click on the “Import Documents” button in the Main menu. </p>
+            <p xml:lang="jp">ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に
+               置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
+               注意：Transkribusのすべてのコレクションとドキュメントはプライベートなものとして設定され、
+               お客様が許可したユーザーのみがドキュメントを見ることができ、一般には公開されていません。
+               アップロードするには、メインメニューの「Import Documents」のボタンをクリックします。 </p>
          </div1>
          <div1 n="2">
             <head>Upload documents to Transkribus</head>
