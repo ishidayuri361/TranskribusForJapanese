@@ -1,0 +1,5 @@
+#英語原文と和訳の表示方法例
+<s>
+ <seg xml:lang="en">this is an English</seg>
+ <seg xml:lang="ja">これは英語です</seg>
+</s>
