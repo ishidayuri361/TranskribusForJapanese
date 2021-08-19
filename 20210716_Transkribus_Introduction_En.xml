@@ -84,13 +84,19 @@
                these two weeks. After this, the document will be permanently deleted. </p>
          </div1>
          <div1 n="3">
-            <head>Segmentation – Layout Analysis</head>
+            <head xml:lang="en">Segmentation – Layout Analysis</head>
+            <head xml:lang="jp">セグメンテーション – レイアウトの分析</head>
             <lb/>
-            <p> Once you have uploaded your documents to Transkribus, you are ready to start
+            <p xml:lang="en"> Once you have uploaded your documents to Transkribus, you are ready to start
                segmentation. In order to transcribe your documents in Transkribus, they must be
                segmented into text regions, lines and baselines. For the HTR to work, the text and
                image need to be connected. All the segmented elements, such as printspace, text
                region, line region or baseline are stored in the PAGE file with their coordinates. </p>
+            <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
+               Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト、行、
+               ベースラインの範囲にそれぞれ分割する必要があります。HTRを読み取るには、文字と画像を合致させる
+               必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、
+               セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
             <div2 n="1">
                <head>Viewing profiles</head>
                <lb/>
