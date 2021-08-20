@@ -17,86 +17,213 @@
    </teiHeader>
    <text>
       <body>
-         <p xml:lang="en"> This guide explains the process of transcribing documents in Transkribus.
-            These transcripts can be used: As training data for a Handwritten Text Recognition
-            (HTR+) model which is capable of automatically transcribing your documents. As the basis
-            for a digital scholarly edition. There is a simple three-step process for transcribing a
-            document in Transkribus: Step 1: Uploading Upload your documents to the Transkribus
-            platform Step 2: Segmentation Run the automated segmentation tool to create baselines
-            for your document. Step 3: Transcription Transcribe the text in the segmented lines.
-            This form of simple transcription is sufficient for training HTR technology. Note: HTR
-            can work on both handwritten and printed documents. The efficiency of a model will
-            depend on the quality of the training material (your manual transcription), the quality
-            of the images and on how neat or messy the writing is. There are also advanced
-            transcription options for those working on scholarly editions. You can adjust the
-            reading order of the text, use historical characters, add tags and metadata, expand
-            abbreviations and more. </p>
-         <p xml:lang="jp"><s>このガイドでは、Transkribusでドキュメントを翻刻するプロセスを説明します。</s>
-            <s>これらの翻刻は以下のように使用できます。</s> ドキュメントを自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。
-            デジタル学術出版物の基礎資料として。 Transkribusでドキュメントを翻刻するには、3つのステップがあります。
-            ステップ1：アップロード　ドキュメントをTranskribusプラットフォームにアップロードします。 ステップ2：セグメンテーション
-            自動セグメンテーションツールを実行して、ドキュメントのベースラインを作成します。 ステップ3: 翻刻　セグメンテーションされた行のテキストを翻刻します。
-            この形式の単純な翻刻は、HTR技術のトレーニングには十分です。
+         <p xml:lang="en" n="0"> This guide explains how to transcribe documents with Transkribus<lb/><list>
+               <item>For training Handwritten Text Recognition technology</item>
+               <item>For Scholarly Editions</item>
+            </list> If you want to have a more general overview, have a look at our <xml:idno
+               uri="https://readcoop.eu/transkribus/howto/use-transkribus-in-10-steps/">10-Steps
+               Guide</xml:idno><lb/> Transkribus is a platform for the automated recognition,
+            transcription and searching of historical documents, using Handwritten Text Recognition
+            (HTR+) technology.<lb/> Transcripts generated with Transkribus can be:<lb/><list>
+               <item>Used to train a neural network (“model”) which is capable of automatically
+                  recognising printed or handwritten documents</item>
+               <item>Enriched and marked-up to serve as the basis for digital editions of
+                  documents.</item>
+            </list> This introduction enables you to either quickly create training data for the
+            automated recognition of your specific documents or to create a transcription for a
+            scholarly edition.<lb/> If you already have transcribed documents available and would
+            like to use them as training data for HTR, please consult our How To Use Exisiting
+            Transcriptions guide.<lb/>
+         </p>
+         <p xml:lang="jp"> このガイドでは、Transkribusでドキュメントを翻刻する方法を説明します。<lb/><list>
+               <item>手書き文字認識技術をトレーニングするために</item>
+               <item>学術編集版の作成のために</item>
+            </list> より一般的な概要を知りたい場合は、<xml:idno
+               uri="https://readcoop.eu/transkribus/howto/use-transkribus-in-10-steps/">10-Steps
+               Guide</xml:idno>をご覧ください。<lb/>
+            Transkribusは、手書き文字認識（HTR+）技術を用いて、歴史的なドキュメントの自動認識、翻刻、検索を行うためのプラットフォームです。<lb/> Transkribusで作成したトランスクリプトは：<lb/><list>
+               <item>印刷されたドキュメントや手書きのドキュメントを自動的に認識することができるニューラルネットワーク（モデル）の学習に使用されます。</item>
+               <item>充実したマークアップを行い、ドキュメントのデジタル・エディションの基礎となります。</item>
+            </list>
+            この「はじめに」により、特定のドキュメントを自動認識するためのトレーニングデータを素早く作成したり、学術的な出版物のための翻刻を作成することができます。<lb/>
+            すでに翻刻されたドキュメントがあり、それをHTRの学習データとして使用したい場合は、How To Use Exisiting
+            Transcriptionsガイドをご参照ください。<lb/>
+         </p>
+         
+         <div xml:lang="en">
+            <head>Introduction/ はじめに</head>
+            <p>This guide explains the process of transcribing documents in Transkribus.<lb/> These
+               transcripts can be used:<lb/><list>
+                  <item>As training data for a Handwritten Text Recognition (HTR+) model which is
+                     capable of automatically transcribing your documents.</item>
+                  <item>As the basis for a digital scholarly edition.</item>
+               </list> There is a simple three-step process for transcribing a document in
+               Transkribus:<lb/> Step 1: Uploading<lb/><list>
+                  <item>Upload your documents to the Transkribus platform</item>
+               </list> Step 2: Segmentation<lb/><list>
+                  <item>Run the automated segmentation tool to create baselines for your
+                     document.</item>
+               </list> Step 3: Transcription<lb/><list>
+                  <item>Transcribe the text in the segmented lines.</item>
+               </list> This form of simple transcription is sufficient for training HTR
+               technology.<lb/> Note: HTR can work on both handwritten and printed documents. The
+               efficiency of a model will depend on the quality of the training material (your
+               manual transcription), the quality of the images and on how neat or messy the writing
+               is.<lb/> There are also advanced transcription options for those working on scholarly
+               editions. You can adjust the reading order of the text, use historical characters,
+               add tags and metadata, expand abbreviations and more. </p>
+
+
+         <p xml:lang="jp"> このガイドでは、Transkribusでドキュメントを翻刻するプロセスを説明します。<lb/> これらの翻刻は次のように使用できます：<lb/><list>
+               <item>ドキュメントを自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。</item>
+               <item>デジタル学術出版物の基礎資料として。</item>
+            </list> Transkribusでドキュメントを翻刻するには、次の3つのステップがあります：<lb/> ステップ 1：アップロード<lb/><list>
+               <item>ドキュメントをTranskribusプラットフォームにアップロードします。</item>
+            </list> ステップ2：セグメンテーション<lb/><list>
+               <item>自動セグメンテーションツールを実行して、ドキュメントのベースラインを作成します。 </item>
+            </list> ステップ3: 翻刻<lb/><list>
+               <item>セグメンテーションされた行のテキストを翻刻します。</item>
+            </list> この形式の単純な翻刻は、HTR技術のトレーニングには十分です。<lb/>
             注：HTRは、手書きのドキュメントと印刷されたドキュメントの両方に対応できます。モデルの効率は、学習教材（あなたが手入力する翻刻）の質、画像の質、そして文字がきちんとしているか・乱れているかに左右されます。
-            また、学術編集版を扱う人のための高度な翻刻オプションもあります。テキストの読み順の調整、歴史的な文字の使用、タグやメタデータの追加、略語の展開などが可能です。 </p>
-         <div1 n="1">
-            <head xml:lang="en">Introduction</head>
-            <head xml:lang="jp">はじめに</head>
-            <lb/>
-            <p xml:lang="en"> In order to be able to run the necessary tools on your documents they
-               need to reside on the Transkribus server. This means that you need to upload them to
-               Transkribus. Note: All collections and documents in Transkribus are private. Only
-               users authorised by you are able to see your documents. They are not made available
-               to the public. To upload click on the “Import Documents” button in the Main menu. </p>
-            <p xml:lang="jp">ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に
-               置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
-               注意：Transkribusのすべてのコレクションとドキュメントはプライベートなものとして設定され、
-               お客様が許可したユーザーのみがドキュメントを見ることができ、一般には公開されていません。
-               アップロードするには、メインメニューの「Import Documents」のボタンをクリックします。 </p>
-         </div1>
-         <div1 n="2">
-            <head>Upload documents to Transkribus</head>
-            <head xml:lang="jp">Transkribusにドキュメントをアップロードする</head>
-            <lb/>
-            <p> You have four options to upload documents: Upload single document from a local
-               folder: This option allows you to upload documents up to 500 MB In order to choose
-               this option choose “Upload Single Document” Please make that the files to be uploaded
-               reside in an extra folder. When choosing the files for the upload you won’t be able
-               to see the files in the folder. That is normal in this case. Just mark the folder and
-               confirm with “OK”. Upload via FTP This is suitable if you want to upload several
-               large documents You can upload image files, as well as PDF-documents with this option
-               Please make sure the PDF-files are not inside a folder when using the FTP-upload
-               Upload via URL of DFG Viewer METS This allows you to upload documents directly from
-               repositories which support the DFG (Deutsche Forschungsgemeinschaft – German Science
-               Funds) Viewer Extract and upload images from PDF This option is suitable for images
-               you want to upload which reside in a PDF-document. If those PDF-documents are of big
-               size, please use the FTP-upload. Also, if you have JP2000 images in your PDFs it
-               makes sense to go for the FTP-option. Add pages to an already existing document in
-               Transkribus: Load the document, you would like to add pages to in Transkribus Open
-               the document manager Select the document again by clicking on it’s name in the
-               “Document Manager”-window Click on the green circle icon next to “Add new page(s)”
-               Search and add the new pages via the directory Delete documents from your collection:
-               Select the document in the collection overview within the “Server”-tab Click on the
-               folder icon with the small red circle “Delete the selected documents from
-               Transkribus”. The deleted document(s) will reside in the recycle bin (icon “contains
-               deleted documents”) for two weeks. If you have deleted a document by mistake you can
-               contact us (info@readcoop.eu) and we will be able to reactivate the document within
-               these two weeks. After this, the document will be permanently deleted. </p>
-         </div1>
+            また、学術編集版を扱う人のための高度な翻刻オプションもあります。テキストの読み順の調整、歴史的な文字の使用、タグやメタデータの追加、略語の展開などが可能です。 <lb/>
+            また、学術的な出版物を作る人のための高度な転写オプションもあります。テキストの読み順を調整することができます。タグやメタデータの追加、略語の拡張などができます。 </p>
+         </div>
+            
+         <div>
+            <head>Upload documents to Transkribus/ Transkribusにドキュメントをアップロードする</head>
+            <p xml:lang="en">
+            In order to be able to run the necessary tools on your documents they
+            need to reside on the Transkribus server. This means that you need to upload them to Transkribus.<lb/>
+            <note>Note: All collections and documents in Transkribus are private. Only users
+               authorised by you are able to see your documents. They are not made available to the
+               public.</note><lb/>
+            To upload click on the “Import Documents” button in the Main
+            menu.<lb/>
+         </p>
+         <p xml:lang="jp"> ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に 置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
+            <note>注意：Transkribusのすべてのコレクションとドキュメントはプライベートなものとして設定され、
+               お客様が許可したユーザーのみがドキュメントを見ることができ、一般には公開されていません。</note><lb/>
+            アップロードするには、メインメニューの「Import Documents」のボタンをクリックします。 </p>
+         </div>
+         <div>
+               <p xml:lang="en"> You have four options to upload documents: <list>
+                  <item>Upload single document from a local folder:<list>
+                        <item>This option allows you to upload documents up to 500 MB.</item>
+                        <item>In order to choose this option choose “Upload Single Document”</item>
+                        <item>Please make that the files to be uploaded reside in an extra folder.
+                           When choosing the files for the upload you won’t be able to see the files
+                           in the folder. That is normal in this case. Just mark the folder and
+                           confirm with “OK”.</item>
+                     </list>
+                  </item>
+               </list><list>
+                  <item>Upload via FTP<list>
+                        <item>This is suitable if you want to upload several large documents</item>
+                        <item>You can upload image files, as well as PDF-documents with this
+                           option</item>
+                        <item>Please make sure the PDF-files are not inside a folder when using the
+                           FTP-upload</item>
+                     </list>
+                  </item>
+               </list>
+                  
+               <list><item>Upload via URL of DFG Viewer METS
+                  <list><item>This allows you to upload documents
+               directly from repositories which support the DFG (Deutsche Forschungsgemeinschaft –
+               German Science Funds) Viewer</item></list>
+               </item></list>
+               
+               <list><item>Extract and upload images from PDF<list>
+               <item>This option is
+               suitable for images you want to upload which reside in a PDF-document.</item> <item>If those
+               PDF-documents are of big size, please use the FTP-upload.</item> <item>Also, if you have JP2000
+               images in your PDFs it makes sense to go for the FTP-option.</item></list></item></list>
+              
+              <list><item>
+              Add pages to an already existing document in Transkribus:
+              <list>    
+               <item>Load the document, you would like to add pages to
+               in Transkribus</item>
+               <item>Open the document manager</item>
+               <item>Select the document again by clicking on
+               it’s name in the “Document Manager”-window</item>
+               <item>Click on the green circle icon next to
+               “Add new page(s)”</item>
+               <item>Search and add the new pages via the directory</item>
+              </list></item></list>
+               
+               <list><item>Delete documents
+               from your collection:<list>
+               <item>Select the document in the collection overview within the
+               “Server”-tab</item> 
+               <item>Click on the folder icon with the small red circle “Delete the selected
+               documents from Transkribus”.</item>
+               <item>The deleted document(s) will reside in the recycle bin
+               (icon “contains deleted documents”) for two weeks. If you have deleted a document by
+               mistake you can contact us (info@readcoop.eu) and we will be able to reactivate the
+               document within these two weeks. After this, the document will be permanently
+               deleted.</item></list></item>
+               </list>
+            </p>
+            <div>
+               <p xml:lang="jp">ドキュメントのアップロードには4つの方法があります: <list>
+                  <item>ローカルフォルダーからドキュメントをアップロードする方法:<list>
+                     <item>この方法では、500MBまでのドキュメントをアップロードすることができます。</item>
+                     <item>このオプションを選択するには、"Upload
+                        Single
+                        Document"を選択してください。</item>
+                     <item>アップロードするファイルは、専用のフォルダにおくようにしてください。アップロードするファイルを選択する際に、通常、フォルダ内のファイルは表示されません。フォルダを選択し、"OK"をクリックしてください。</item>
+                  </list>
+                  </item>
+               </list><list>
+                  <item>FTP経由でアップロードする方法<list>
+                     <item>複数の大きな文書をアップロードしたい場合に適しています。</item>
+                     <item>この方法では、PDF文書だけでなく、画像ファイルもアップロードできます。</item>
+                     <item>FTPアップロードの際には、PDFファイルがフォルダ内にないことを確認してください。</item>
+                  </list>
+                  </item>
+               </list>
+                  
+                  <list><item>DFGビューアMETSのURL経由でアップロードする方法
+                     <list><item>この方法では、DFG（ドイツ科学基金）ビューアをサポートするリポジトリから直接文書をアップロードできます。</item></list>
+                  </item></list>
+                  
+                  <list><item>PDFから画像を抽出してアップロードする方法<list>
+                     <item>この方法は、PDF文書に含まれる画像をアップロードしたい場合に適しています。</item> <item>PDF文書のサイズが大きい場合は、FTPアップロードをご利用ください。</item> <item>また、PDFの中にJP2000の画像がある場合は、FTPアップロード利用するのが良いでしょう。</item></list></item></list>
+                  
+                  <list><item>
+                     Transkribusで既存のドキュメントにページを追加する方法:
+                     <list>    
+                        <item>追加したいドキュメントをTranskribusに読み込みます。</item>
+                        <item>ドキュメントマネージャーを開きます</item>
+                        <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
+                        <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
+                        <item>new page(s) "の隣にある緑色の丸いアイコンをクリックし、ディレクトリ経由で新しいページを検索して追加します。</item>
+                     </list></item></list>
+                  
+                  <list><item>コレクションからドキュメントを削除する方法:<list>
+                     <item>"Server"タブ内の"Collection overview"でドキュメントを選択します。</item> 
+                     <item>“Delete the selected
+                        documents from Transkribus”の小さな赤い丸が付いたフォルダアイコンをクリックします。</item>
+                     <item>削除されたドキュメントは2週間、ごみ箱（アイコン"conatins deleted
+                        documents"）に保存されます。誤ってドキュメントを削除してしまった場合は、弊社（info@readcoop.eu）にご連絡いただければ、この2週間以内にドキュメントを再有効化することができます。2週間を過ぎると、ドキュメントは永久に削除されます。</item></list></item>
+                  </list>
+               </p>
+            </div>
+         </div>
          <div1 n="3">
             <head xml:lang="en">Segmentation – Layout Analysis</head>
             <head xml:lang="jp">セグメンテーション – レイアウトの分析</head>
             <lb/>
-            <p xml:lang="en"> Once you have uploaded your documents to Transkribus, you are ready to start
-               segmentation. In order to transcribe your documents in Transkribus, they must be
-               segmented into text regions, lines and baselines. For the HTR to work, the text and
-               image need to be connected. All the segmented elements, such as printspace, text
+            <p xml:lang="en"> Once you have uploaded your documents to Transkribus, you are ready to
+               start segmentation. In order to transcribe your documents in Transkribus, they must
+               be segmented into text regions, lines and baselines. For the HTR to work, the text
+               and image need to be connected. All the segmented elements, such as printspace, text
                region, line region or baseline are stored in the PAGE file with their coordinates. </p>
             <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
                Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト、行、
                ベースラインの範囲にそれぞれ分割する必要があります。HTRを読み取るには、文字と画像を合致させる
-               必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、
-               セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
+               必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、 セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
             <div2 n="1">
                <head>Viewing profiles</head>
                <lb/>
@@ -202,7 +329,6 @@
          <div1 n="6">
             <head>Advanced transcription – for a scholarly edition</head>
             <lb/>
-
             <div2 n="1">
                <head>Reading order</head>
                <lb/>
