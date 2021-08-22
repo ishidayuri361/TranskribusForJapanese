@@ -225,9 +225,10 @@
                ベースラインの範囲にそれぞれ分割する必要があります。HTRを読み取るには、文字と画像を合致させる
                必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、 セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
             <div2 n="1">
-               <head>Viewing profiles</head>
+               <head xml:lang="en">Viewing profiles</head>
+               <head xml:lang="ja">プロファイルの表示</head>
                <lb/>
-               <p> Viewing profiles are available to help you with the tasks of segmentation and
+               <p xml:lang="en"> Viewing profiles are available to help you with the tasks of segmentation and
                   transcription. You can select between viewing profiles for “Segmentation” and
                   “Transcription” by clicking the “Profiles” button in the Main menu. The
                   “Segmentation” profile means that baselines are displayed in red, making it easier
@@ -235,6 +236,14 @@
                   “Transcription” profile means that the Text Editor field will be displayed,
                   allowing you to transcribe your document. Of course you can simply use the
                   “default” profile to perform either task. </p>
+               <p xml:lang="ja"> プロファイルを表示させることで、セグメンテーションや翻刻の状態を確認することができます。
+                  メニューバーの「Profiles」ボタンをクリックすると、「セグメンテーションSegmentation」や
+                  「翻刻Transcription」を選択することができます。「セグメンテーションSegmentation」のプロファイルでは、
+                  （初期設定で水色になっている）ベースラインの線が赤色でハイライトされ、
+                  自動で読み取ったセグメンテーションのエラーを見つけやすくなります。
+                  「翻刻Transcription」のプロファイルでは、（画像の下方に）テキスト編集フィールドが表示され、
+                  ドキュメントの翻刻をすることができます。
+                  「標準default」を選択すると（上記のハイライトを解除し）あらゆる操作ができるようになります。 </p>
             </div2>
             <div2 n="2">
                <head>Automatically detect text regions, lines and baselines</head>
