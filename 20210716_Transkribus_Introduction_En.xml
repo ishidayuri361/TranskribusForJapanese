@@ -237,9 +237,10 @@
                   “default” profile to perform either task. </p>
             </div2>
             <div2 n="2">
-               <head>Automatically detect text regions, lines and baselines</head>
+               <head xml:lang="en">Automatically detect text regions, lines and baselines</head>
+               <head xml:lang="jp">自動でテキストの範囲、行、ベースラインを検出させる</head>
                <lb/>
-               <p> Select the “Segmentation” viewing profile from the Main menu. Select the “Tools”
+               <p xml:lang="en"> Select the “Segmentation” viewing profile from the Main menu. Select the “Tools”
                   tab on the left side of the screen and go to the “Layout Analysis” section. Under
                   “Method:” select “CITlab Advanced” (already preselected). Select if you would like
                   to run the layout analysis only for the current page, for distinct pages, or for
@@ -247,10 +248,20 @@
                   button. If you would like to draw the text regions by hand and then search for the
                   baselines in these regions, untick the “Find Text Regions”-option before starting
                   the layout analysis. How to draw text regions is explained further down in the
-                  text. </p>
+                  text.</p>
+               <p xml:lang="jp"> メニューバーの「プロファイルProfile」から、「セグメンテーションSegmentation」を選びます。 
+                  画面の左側にある「ツールTools」タブを選択し、（一番上の）「レイアウト認識Layout Analysis」セクションを表示します。
+                  「メソッドMethod:」で（初期設定である）CITlabAdvanced」が選択されていることを確認します。 
+                  レイアウト認識を読み込ませる範囲を、現在表示されているページ（初期設定）か、指定したページ（ページ数を入力）から選びます。
+                  「テキストの領域を認識するFind Text Regions」（初期設定）が選択されていることを確認します。 
+                  「実行Run」ボタンをクリックします。
+                  翻刻するテキストの範囲を手動で指定してから、その範囲内のベースラインを検出させたい場合、
+                  レイアウト認識を開始する前に「テキストの領域を認識するFind Text Regions」のチェックを外してください。
+                  テキストの範囲を指定する方法は、別項で説明します。 </p>
             </div2>
             <div2 n="3">
-               <head>Correcting the results of automated segmentation</head>
+               <head xml:lang="en">Correcting the results of automated segmentation</head>
+               <head xml:lang="jp">自動で検出されたセグメンテーションの結果を修正する</head>
                <lb/>
                <p> Note: if you are training a HTR model, the position of text regions does not need
                   to be completely exact and the reading order of the text is not relevant. If you
