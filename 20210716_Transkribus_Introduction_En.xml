@@ -213,7 +213,7 @@
          </div>
          <div1 n="3">
             <head xml:lang="en">Segmentation – Layout Analysis</head>
-            <head xml:lang="jp">セグメンテーション – レイアウトの分析</head>
+            <head xml:lang="jp">セグメンテーション – レイアウトの認識</head>
             <lb/>
             <p xml:lang="en"> Once you have uploaded your documents to Transkribus, you are ready to
                start segmentation. In order to transcribe your documents in Transkribus, they must
@@ -222,7 +222,7 @@
                region, line region or baseline are stored in the PAGE file with their coordinates. </p>
             <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
                Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト、行、
-               ベースラインの範囲にそれぞれ分割する必要があります。HTRを読み取るには、文字と画像を合致させる
+               ベースラインの範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
                必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、 セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
             <div2 n="1">
                <head>Viewing profiles</head>
