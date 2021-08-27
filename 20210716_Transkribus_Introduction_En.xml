@@ -100,7 +100,7 @@
             To upload click on the “Import Documents” button in the Main
             menu.<lb/>
          </p>
-         <p xml:lang="jp"> ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に 置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
+         <p xml:lang="jp"> ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
             <note>注意：Transkribusのすべてのコレクションとドキュメントはプライベートなものとして設定され、
                お客様が許可したユーザーのみがドキュメントを見ることができ、一般には公開されていません。</note><lb/>
             アップロードするには、メインメニューの「Import Documents」のボタンをクリックします。 </p>
@@ -221,10 +221,10 @@
                and image need to be connected. All the segmented elements, such as printspace, text
                region, line region or baseline are stored in the PAGE file with their coordinates. </p>
             <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
-               Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト、行、
-               ベースラインの範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
-               必要があります。印字されたスペース、テキスト、行、ベースラインの範囲など、 セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
-            <div2 n="1">
+               Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト・リージョン（領域）、ライン（行）、
+               ベースライン（罫線）の範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
+               必要があります。印字されたスペース、テキスト・リージョン（領域）、ライン（行）、ベースライン（罫線）の範囲など、 
+               セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
                <head xml:lang="en">Viewing profiles</head>
                <head xml:lang="ja">プロファイルの表示</head>
                <lb/>
@@ -239,7 +239,7 @@
                <p xml:lang="ja"> プロファイルを表示させることで、セグメンテーションや翻刻の状態を確認することができます。
                   メニューバーの「Profiles」ボタンをクリックすると、「セグメンテーションSegmentation」や
                   「翻刻Transcription」を選択することができます。「セグメンテーションSegmentation」のプロファイルでは、
-                  （初期設定で水色になっている）ベースラインの線が赤色でハイライトされ、
+                  （初期設定で水色になっている）ベースライン（罫線）の線が赤色でハイライトされ、
                   自動で読み取ったセグメンテーションのエラーを見つけやすくなります。
                   「翻刻Transcription」のプロファイルでは、（画像の下方に）テキスト編集フィールドが表示され、
                   ドキュメントの翻刻をすることができます。
@@ -247,7 +247,7 @@
             </div2>
             <div2 n="2">
                <head xml:lang="en">Automatically detect text regions, lines and baselines</head>
-               <head xml:lang="jp">自動でテキストの範囲、行、ベースラインを検出させる</head>
+               <head xml:lang="jp">自動でテキストのリージョン（範囲）、ライン（行）、ベースライン（罫線）を検出させる</head>
                <lb/>
                <p xml:lang="en"> Select the “Segmentation” viewing profile from the Main menu. Select the “Tools”
                   tab on the left side of the screen and go to the “Layout Analysis” section. Under
@@ -262,24 +262,31 @@
                   画面の左側にある「ツールTools」タブを選択し、（一番上の）「レイアウト認識Layout Analysis」セクションを表示します。
                   「メソッドMethod:」で（初期設定である）「CITlabAdvanced」が選択されていることを確認します。 
                   レイアウト認識を読み込ませる範囲を、現在表示されているページ（初期設定）か、指定したページ（ページ数を入力）から選びます。
-                  「テキストの領域を認識するFind Text Regions」（初期設定）が選択されていることを確認します。 
+                  「テキストのリージョンを認識するFind Text Regions」（初期設定）が選択されていることを確認します。 
                   「実行Run」ボタンをクリックします。
-                  翻刻するテキストの範囲を手動で指定してから、その範囲内のベースラインを検出させたい場合、
-                  レイアウト認識を開始する前に「テキストの領域を認識するFind Text Regions」のチェックを外してください。
-                  テキストの範囲を指定する方法は、別項で説明します。 </p>
+                  翻刻するテキストのリージョン（領域）を手動で指定してから、その範囲内のベースライン（罫線）を検出させたい場合、
+                  レイアウト認識を開始する前に「テキストのリージョンを認識するFind Text Regions」のチェックを外してください。
+                  テキスト・リージョン（領域）を指定する方法は、別項で説明します。 </p>
             </div2>
             <div2 n="3">
                <head xml:lang="en">Correcting the results of automated segmentation</head>
                <head xml:lang="jp">自動で検出されたセグメンテーションの結果を修正する</head>
                <lb/>
-               <p> Note: if you are training a HTR model, the position of text regions does not need
+               <p xml:lang="en"> Note: if you are training a HTR model, the position of text regions does not need
                   to be completely exact and the reading order of the text is not relevant. If you
                   are working on a scholarly edition where a higher degree of accuracy is required,
                   it is possible to manually correct the text as in the examples below. All tools
                   for corrections on the layout analysis can be found in the “Canvas”-menu left of
                   the image. You can check their functionality by hovering over the icon. </p>
+               <p xml:lang="jp"> 注：HTRモデルのトレーニングのために、テキスト・リージョン（領域）の位置は完全に正確である必要はなく、
+                  テキストの読み取り順序は関係ありません。より高い精度が要求される
+                  Scholarly edition(学術版）で作業している場合は、
+                  以下の例のようにテキストを手動で修正することができます。
+                  レイアウト分析を修正するためのツールはすべて、画面の左側にある「キャンバス」メニューにあります。 
+                  アイコンにカーソルを合わせると、機能を確認できます。</p>
                <div3 n="1">
-                  <head>A line has been missed or added by mistake</head>
+                  <head xml:lang="en">A line has been missed or added by mistake</head>
+                  <head xml:lang="jp">誤ってライン（行）が欠落していたり、追加してしまった場合</head>
                   <lb/>
                   <p> In the example above the first line had been missed by the program. If you
                      would like to add it to the existing text region: Click inside the region so
