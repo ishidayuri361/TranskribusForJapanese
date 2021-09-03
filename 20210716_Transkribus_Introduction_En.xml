@@ -17,6 +17,7 @@
    </teiHeader>
    <text>
       <body>
+         <div>
          <p xml:lang="en" n="0"> This guide explains how to transcribe documents with Transkribus<lb/><list>
                <item>For training Handwritten Text Recognition technology</item>
                <item>For Scholarly Editions</item>
@@ -49,6 +50,7 @@
             すでに翻刻されたドキュメントがあり、それをHTRの学習データとして使用したい場合は、How To Use Exisiting
             Transcriptionsガイドをご参照ください。<lb/>
          </p>
+         </div>
          
          <div xml:lang="en">
             <head>Introduction/ はじめに</head>
@@ -73,7 +75,7 @@
                editions. You can adjust the reading order of the text, use historical characters,
                add tags and metadata, expand abbreviations and more. </p>
 
-
+            <head>はじめに</head>
          <p xml:lang="jp"> このガイドでは、Transkribusでドキュメントを翻刻するプロセスを説明します。<lb/> これらの翻刻は次のように使用できます：<lb/><list>
                <item>ドキュメントを自動的に翻刻するための、手書き文字認識（HTR+）モデルの学習データとして。</item>
                <item>デジタル学術出版物の基礎資料として。</item>
@@ -90,7 +92,7 @@
          </div>
             
          <div>
-            <head>Upload documents to Transkribus/ Transkribusにドキュメントをアップロードする</head>
+            <head>Upload documents to Transkribus</head>
             <p xml:lang="en">
             In order to be able to run the necessary tools on your documents they
             need to reside on the Transkribus server. This means that you need to upload them to Transkribus.<lb/>
@@ -98,144 +100,144 @@
                authorised by you are able to see your documents. They are not made available to the
                public.</note><lb/>
             To upload click on the “Import Documents” button in the Main
-            menu.<lb/>
-         </p>
+            menu.<lb/></p>
+               <p> You have four options to upload documents: <list>
+                  <item>Upload single document from a local folder:<list>
+                     <item>This option allows you to upload documents up to 500 MB.</item>
+                     <item>In order to choose this option choose “Upload Single Document”</item>
+                     <item>Please make that the files to be uploaded reside in an extra folder.
+                        When choosing the files for the upload you won’t be able to see the files
+                        in the folder. That is normal in this case. Just mark the folder and
+                        confirm with “OK”.</item>
+                  </list>
+                  </item>
+               </list><list>
+                  <item>Upload via FTP<list>
+                     <item>This is suitable if you want to upload several large documents</item>
+                     <item>You can upload image files, as well as PDF-documents with this
+                        option</item>
+                     <item>Please make sure the PDF-files are not inside a folder when using the
+                        FTP-upload</item>
+                  </list>
+                  </item>
+               </list>
+                  
+                  <list><item>Upload via URL of DFG Viewer METS
+                     <list><item>This allows you to upload documents
+                        directly from repositories which support the DFG (Deutsche Forschungsgemeinschaft –
+                        German Science Funds) Viewer</item></list>
+                  </item></list>
+                  
+                  <list><item>Extract and upload images from PDF<list>
+                     <item>This option is
+                        suitable for images you want to upload which reside in a PDF-document.</item> <item>If those
+                           PDF-documents are of big size, please use the FTP-upload.</item> <item>Also, if you have JP2000
+                              images in your PDFs it makes sense to go for the FTP-option.</item></list></item></list>
+                  
+                  <list><item>
+                     Add pages to an already existing document in Transkribus:
+                     <list>    
+                        <item>Load the document, you would like to add pages to
+                           in Transkribus</item>
+                        <item>Open the document manager</item>
+                        <item>Select the document again by clicking on
+                           it’s name in the “Document Manager”-window</item>
+                        <item>Click on the green circle icon next to
+                           “Add new page(s)”</item>
+                        <item>Search and add the new pages via the directory</item>
+                     </list></item></list>
+                  
+                  <list><item>Delete documents
+                     from your collection:<list>
+                        <item>Select the document in the collection overview within the
+                           “Server”-tab</item> 
+                        <item>Click on the folder icon with the small red circle “Delete the selected
+                           documents from Transkribus”.</item>
+                        <item>The deleted document(s) will reside in the recycle bin
+                           (icon “contains deleted documents”) for two weeks. If you have deleted a document by
+                           mistake you can contact us (info@readcoop.eu) and we will be able to reactivate the
+                           document within these two weeks. After this, the document will be permanently
+                           deleted.</item></list></item>
+                  </list>
+               </p>
+               
+            <head>Transkribusにドキュメントをアップロードする</head>
          <p xml:lang="jp"> ドキュメントに対して必要なツールを実行するためには、ドキュメントがTranskribusのサーバー上に置かれている必要があります。したがって、最初にドキュメントをTranskribusにアップロードする必要があります。<lb/>
             <note>注意：Transkribusのすべてのコレクションとドキュメントはプライベートなものとして設定され、
                お客様が許可したユーザーのみがドキュメントを見ることができ、一般には公開されていません。</note><lb/>
             アップロードするには、メインメニューの「Import Documents」のボタンをクリックします。 </p>
-         </div>
-         <div>
-               <p xml:lang="en"> You have four options to upload documents: <list>
-                  <item>Upload single document from a local folder:<list>
-                        <item>This option allows you to upload documents up to 500 MB.</item>
-                        <item>In order to choose this option choose “Upload Single Document”</item>
-                        <item>Please make that the files to be uploaded reside in an extra folder.
-                           When choosing the files for the upload you won’t be able to see the files
-                           in the folder. That is normal in this case. Just mark the folder and
-                           confirm with “OK”.</item>
-                     </list>
-                  </item>
-               </list><list>
-                  <item>Upload via FTP<list>
-                        <item>This is suitable if you want to upload several large documents</item>
-                        <item>You can upload image files, as well as PDF-documents with this
-                           option</item>
-                        <item>Please make sure the PDF-files are not inside a folder when using the
-                           FTP-upload</item>
-                     </list>
-                  </item>
+            <p>ドキュメントのアップロードには4つの方法があります: <list>
+               <item>ローカルフォルダーからドキュメントをアップロードする方法:<list>
+                  <item>この方法では、500MBまでのドキュメントをアップロードすることができます。</item>
+                  <item>このオプションを選択するには、"Upload
+                     Single
+                     Document"を選択してください。</item>
+                  <item>アップロードするファイルは、専用のフォルダにおくようにしてください。アップロードするファイルを選択する際に、通常、フォルダ内のファイルは表示されません。フォルダを選択し、"OK"をクリックしてください。</item>
                </list>
-                  
-               <list><item>Upload via URL of DFG Viewer METS
-                  <list><item>This allows you to upload documents
-               directly from repositories which support the DFG (Deutsche Forschungsgemeinschaft –
-               German Science Funds) Viewer</item></list>
+               </item>
+            </list><list>
+               <item>FTP経由でアップロードする方法<list>
+                  <item>複数の大きな文書をアップロードしたい場合に適しています。</item>
+                  <item>この方法では、PDF文書だけでなく、画像ファイルもアップロードできます。</item>
+                  <item>FTPアップロードの際には、PDFファイルがフォルダ内にないことを確認してください。</item>
+               </list>
+               </item>
+            </list>
+               
+               <list><item>DFGビューアMETSのURL経由でアップロードする方法
+                  <list><item>この方法では、DFG（ドイツ科学基金）ビューアをサポートするリポジトリから直接文書をアップロードできます。</item></list>
                </item></list>
                
-               <list><item>Extract and upload images from PDF<list>
-               <item>This option is
-               suitable for images you want to upload which reside in a PDF-document.</item> <item>If those
-               PDF-documents are of big size, please use the FTP-upload.</item> <item>Also, if you have JP2000
-               images in your PDFs it makes sense to go for the FTP-option.</item></list></item></list>
-              
-              <list><item>
-              Add pages to an already existing document in Transkribus:
-              <list>    
-               <item>Load the document, you would like to add pages to
-               in Transkribus</item>
-               <item>Open the document manager</item>
-               <item>Select the document again by clicking on
-               it’s name in the “Document Manager”-window</item>
-               <item>Click on the green circle icon next to
-               “Add new page(s)”</item>
-               <item>Search and add the new pages via the directory</item>
-              </list></item></list>
+               <list><item>PDFから画像を抽出してアップロードする方法<list>
+                  <item>この方法は、PDF文書に含まれる画像をアップロードしたい場合に適しています。</item> <item>PDF文書のサイズが大きい場合は、FTPアップロードをご利用ください。</item> <item>また、PDFの中にJP2000の画像がある場合は、FTPアップロード利用するのが良いでしょう。</item></list></item></list>
                
-               <list><item>Delete documents
-               from your collection:<list>
-               <item>Select the document in the collection overview within the
-               “Server”-tab</item> 
-               <item>Click on the folder icon with the small red circle “Delete the selected
-               documents from Transkribus”.</item>
-               <item>The deleted document(s) will reside in the recycle bin
-               (icon “contains deleted documents”) for two weeks. If you have deleted a document by
-               mistake you can contact us (info@readcoop.eu) and we will be able to reactivate the
-               document within these two weeks. After this, the document will be permanently
-               deleted.</item></list></item>
+               <list><item>
+                  Transkribusで既存のドキュメントにページを追加する方法:
+                  <list>    
+                     <item>追加したいドキュメントをTranskribusに読み込みます。</item>
+                     <item>ドキュメントマネージャーを開きます</item>
+                     <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
+                     <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
+                     <item>new page(s) "の隣にある緑色の丸いアイコンをクリックし、ディレクトリ経由で新しいページを検索して追加します。</item>
+                  </list></item></list>
+               
+               <list><item>コレクションからドキュメントを削除する方法:<list>
+                  <item>"Server"タブ内の"Collection overview"でドキュメントを選択します。</item> 
+                  <item>“Delete the selected
+                     documents from Transkribus”の小さな赤い丸が付いたフォルダアイコンをクリックします。</item>
+                  <item>削除されたドキュメントは2週間、ごみ箱（アイコン"conatins deleted
+                     documents"）に保存されます。誤ってドキュメントを削除してしまった場合は、弊社（info@readcoop.eu）にご連絡いただければ、この2週間以内にドキュメントを再有効化することができます。2週間を過ぎると、ドキュメントは永久に削除されます。</item></list></item>
                </list>
             </p>
-            <div>
-               <p xml:lang="jp">ドキュメントのアップロードには4つの方法があります: <list>
-                  <item>ローカルフォルダーからドキュメントをアップロードする方法:<list>
-                     <item>この方法では、500MBまでのドキュメントをアップロードすることができます。</item>
-                     <item>このオプションを選択するには、"Upload
-                        Single
-                        Document"を選択してください。</item>
-                     <item>アップロードするファイルは、専用のフォルダにおくようにしてください。アップロードするファイルを選択する際に、通常、フォルダ内のファイルは表示されません。フォルダを選択し、"OK"をクリックしてください。</item>
-                  </list>
-                  </item>
-               </list><list>
-                  <item>FTP経由でアップロードする方法<list>
-                     <item>複数の大きな文書をアップロードしたい場合に適しています。</item>
-                     <item>この方法では、PDF文書だけでなく、画像ファイルもアップロードできます。</item>
-                     <item>FTPアップロードの際には、PDFファイルがフォルダ内にないことを確認してください。</item>
-                  </list>
-                  </item>
-               </list>
-                  
-                  <list><item>DFGビューアMETSのURL経由でアップロードする方法
-                     <list><item>この方法では、DFG（ドイツ科学基金）ビューアをサポートするリポジトリから直接文書をアップロードできます。</item></list>
-                  </item></list>
-                  
-                  <list><item>PDFから画像を抽出してアップロードする方法<list>
-                     <item>この方法は、PDF文書に含まれる画像をアップロードしたい場合に適しています。</item> <item>PDF文書のサイズが大きい場合は、FTPアップロードをご利用ください。</item> <item>また、PDFの中にJP2000の画像がある場合は、FTPアップロード利用するのが良いでしょう。</item></list></item></list>
-                  
-                  <list><item>
-                     Transkribusで既存のドキュメントにページを追加する方法:
-                     <list>    
-                        <item>追加したいドキュメントをTranskribusに読み込みます。</item>
-                        <item>ドキュメントマネージャーを開きます</item>
-                        <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
-                        <item>"Document Manager"ウィンドウでドキュメントの名前をクリックして再度ドキュメントを選択します。</item>
-                        <item>new page(s) "の隣にある緑色の丸いアイコンをクリックし、ディレクトリ経由で新しいページを検索して追加します。</item>
-                     </list></item></list>
-                  
-                  <list><item>コレクションからドキュメントを削除する方法:<list>
-                     <item>"Server"タブ内の"Collection overview"でドキュメントを選択します。</item> 
-                     <item>“Delete the selected
-                        documents from Transkribus”の小さな赤い丸が付いたフォルダアイコンをクリックします。</item>
-                     <item>削除されたドキュメントは2週間、ごみ箱（アイコン"conatins deleted
-                        documents"）に保存されます。誤ってドキュメントを削除してしまった場合は、弊社（info@readcoop.eu）にご連絡いただければ、この2週間以内にドキュメントを再有効化することができます。2週間を過ぎると、ドキュメントは永久に削除されます。</item></list></item>
-                  </list>
-               </p>
-            </div>
          </div>
-         <div1 n="3">
+
+         <div>
             <head xml:lang="en">Segmentation – Layout Analysis</head>
-            <head xml:lang="jp">セグメンテーション – レイアウトの認識</head>
-            <lb/>
             <p xml:lang="en"> Once you have uploaded your documents to Transkribus, you are ready to
                start segmentation. In order to transcribe your documents in Transkribus, they must
                be segmented into text regions, lines and baselines. For the HTR to work, the text
                and image need to be connected. All the segmented elements, such as printspace, text
                region, line region or baseline are stored in the PAGE file with their coordinates. </p>
+            
+            <head xml:lang="jp">セグメンテーション – レイアウトの認識</head>
             <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
                Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト・リージョン（領域）、ライン（行）、
                ベースライン（罫線）の範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
                必要があります。印字されたスペース、テキスト・リージョン（領域）、ライン（行）、ベースライン（罫線）の範囲など、 
                セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
-               <head xml:lang="en">Viewing profiles</head>
+         </div>
+         <div>   
+              <head xml:lang="en">Viewing profiles</head>
+              <p xml:lang="en"> Viewing profiles are available to help you with the tasks of segmentation and
+               transcription. You can select between viewing profiles for “Segmentation” and
+               “Transcription” by clicking the “Profiles” button in the Main menu. The
+               “Segmentation” profile means that baselines are displayed in red, making it easier
+               to spot any errors resulting from the automated segmentation process. The
+               “Transcription” profile means that the Text Editor field will be displayed,
+               allowing you to transcribe your document. Of course you can simply use the
+               “default” profile to perform either task.</p>
+            
                <head xml:lang="ja">プロファイルの表示</head>
-               <lb/>
-               <p xml:lang="en"> Viewing profiles are available to help you with the tasks of segmentation and
-                  transcription. You can select between viewing profiles for “Segmentation” and
-                  “Transcription” by clicking the “Profiles” button in the Main menu. The
-                  “Segmentation” profile means that baselines are displayed in red, making it easier
-                  to spot any errors resulting from the automated segmentation process. The
-                  “Transcription” profile means that the Text Editor field will be displayed,
-                  allowing you to transcribe your document. Of course you can simply use the
-                  “default” profile to perform either task. </p>
                <p xml:lang="ja"> プロファイルを表示させることで、セグメンテーションや翻刻の状態を確認することができます。
                   メニューバーの「Profiles」ボタンをクリックすると、「セグメンテーションSegmentation」や
                   「翻刻Transcription」を選択することができます。「セグメンテーションSegmentation」のプロファイルでは、
@@ -244,11 +246,9 @@
                   「翻刻Transcription」のプロファイルでは、（画像の下方に）テキスト編集フィールドが表示され、
                   ドキュメントの翻刻をすることができます。
                   「標準default」を選択すると（上記のハイライトを解除し）あらゆる操作ができるようになります。 </p>
-            </div2>
-            <div2 n="2">
+            </div>
+            <div>
                <head xml:lang="en">Automatically detect text regions, lines and baselines</head>
-               <head xml:lang="jp">自動でテキストのリージョン（範囲）、ライン（行）、ベースライン（罫線）を検出させる</head>
-               <lb/>
                <p xml:lang="en"> Select the “Segmentation” viewing profile from the Main menu. Select the “Tools”
                   tab on the left side of the screen and go to the “Layout Analysis” section. Under
                   “Method:” select “CITlab Advanced” (already preselected). Select if you would like
@@ -258,6 +258,8 @@
                   baselines in these regions, untick the “Find Text Regions”-option before starting
                   the layout analysis. How to draw text regions is explained further down in the
                   text.</p>
+               
+               <head xml:lang="jp">自動でテキストのリージョン（範囲）、ライン（行）、ベースライン（罫線）を検出させる</head>
                <p xml:lang="jp"> メニューバーの「プロファイルProfile」から、「セグメンテーションSegmentation」を選びます。 
                   画面の左側にある「ツールTools」タブを選択し、（一番上の）「レイアウト認識Layout Analysis」セクションを表示します。
                   「メソッドMethod:」で（初期設定である）「CITlabAdvanced」が選択されていることを確認します。 
@@ -267,55 +269,55 @@
                   翻刻するテキストのリージョン（領域）を手動で指定してから、その範囲内のベースライン（罫線）を検出させたい場合、
                   レイアウト認識を開始する前に「テキストのリージョンを認識するFind Text Regions」のチェックを外してください。
                   テキスト・リージョン（領域）を指定する方法は、別項で説明します。 </p>
-            </div2>
-            <div2 n="3">
+            </div>
+            <div>
                <head xml:lang="en">Correcting the results of automated segmentation</head>
-               <head xml:lang="jp">自動で検出されたセグメンテーションの結果を修正する</head>
-               <lb/>
                <p xml:lang="en"> Note: if you are training a HTR model, the position of text regions does not need
                   to be completely exact and the reading order of the text is not relevant. If you
                   are working on a scholarly edition where a higher degree of accuracy is required,
                   it is possible to manually correct the text as in the examples below. All tools
                   for corrections on the layout analysis can be found in the “Canvas”-menu left of
                   the image. You can check their functionality by hovering over the icon. </p>
+               
+               <head xml:lang="jp">自動で検出されたセグメンテーションの結果を修正する</head>
                <p xml:lang="jp"> 注：HTRモデルのトレーニングのために、テキスト・リージョン（領域）の位置は完全に正確である必要はなく、
                   テキストの読み取り順序は関係ありません。より高い精度が要求される
                   Scholarly edition(学術版）で作業している場合は、
                   以下の例のようにテキストを手動で修正することができます。
                   レイアウト分析を修正するためのツールはすべて、画面の左側にある「キャンバス」メニューにあります。 
                   アイコンにカーソルを合わせると、機能を確認できます。</p>
-               <div3 n="1">
+
+               <div>
                   <head xml:lang="en">A line has been missed or added by mistake</head>
-                  <head xml:lang="jp">誤ってライン（行）が欠落していたり、追加してしまった場合</head>
-                  <lb/>
                   <p> In the example above the first line had been missed by the program. If you
                      would like to add it to the existing text region: Click inside the region so
                      that it is highlighted. Drag the border of the text region as needed. </p>
-               </div3>
-               <div3 n="2">
+                  <head xml:lang="jp">誤ってライン（行）が欠落していたり、追加してしまった場合</head>
+               </div>
+               <div n="2">
                   <head>A marginal note needs to be split into a separate text region</head>
                   <lb/>
                   <p> If you need to split one region into two, you can do this with buttons in the
                      Canvas menu. As shown in Figure 6, the “H-button” splits a text region
                      horizontally. The “V” button splits a text region vertically. The “L-button”
                      allows you to split a text region with customisable line. </p>
-               </div3>
-               <div3 n="3">
+               </div>
+               <div n="3">
                   <head>Remove a region which is not needed</head>
                   <lb/>
                   <p> In the example above two regions are overlapping, so one can be deleted. Click
                      on the text region you wish to delete, and click the red “Remove a shape”
                      button. </p>
-               </div3>
-               <div3 n="4">
+               </div>
+               <div n="4">
                   <head>Merge two regions</head>
                   <lb/>
                   <p> Sometimes the program creates two text regions where only one is needed. In
                      this case you can easily merge the two together. Hold down the “CTRL” button on
                      your keyboard and click on both text regions. Click the “Merges the selected
                      shapes” button in the Canvas menu. </p>
-               </div3>
-               <div3 n="5">
+               </div>
+               <div n="5">
                   <head>Correct baselines</head>
                   <lb/>
                   <p> Of course it is also possible to correct the baselines in your document. As
@@ -325,10 +327,10 @@
                      menu. Click once to start drawing your baseline and double-click to finish your
                      line. Note: Baselines are most important for HTR; line regions do not need to
                      be corrected. </p>
-               </div3>
-            </div2>
-         </div1>
-         <div1 n="4">
+               </div>
+            </div>
+         
+         <div>
             <head>Simple transcription – for HTR+ training</head>
             <lb/>
             <p> Select the “Transcription” viewing profile from the Main menu. You will see the Text
@@ -339,8 +341,8 @@
                but they should not work on the same page simultaneously. You can let other
                Transkribus users see your documents by clicking the “User Manager” button in the
                “Server” tab. </p>
-         </div1>
-         <div1 n="5">
+         </div>
+         <div>
             <head>Train a HTR model</head>
             <lb/>
             <p> If you wish to train a HTR model to recognise your documents, this simple
@@ -352,11 +354,11 @@
                Transkribus (please make sure the writing is at least similar to the one in your
                documents [e.g. of a similar date, the same language and/or style]) or one of your
                previously trained models – provided it is good enough to serve as a base model. </p>
-         </div1>
-         <div1 n="6">
+         </div>
+         <div>
             <head>Advanced transcription – for a scholarly edition</head>
             <lb/>
-            <div2 n="1">
+            <div>
                <head>Reading order</head>
                <lb/>
                <p> Once a document has been segmented into text regions, lines and baselines, you
@@ -387,8 +389,8 @@
                   text region on the page into separate regions for each column. Once there is a
                   separate text region for each column, the reading order should automatically
                   update and be correct. </p>
-            </div2>
-            <div2 n="2">
+            </div>
+            <div>
                <head>Reading order: Interline additions</head>
                <lb/>
                <p> Interline additions are a frequent way in which text is added to a document. In
@@ -399,8 +401,8 @@
                   exactly where the addition should be logically placed Edit the reading order so
                   that it is correct. Click on the number associated with each line region and then
                   type the correct one. </p>
-            </div2>
-            <div2 n="3">
+            </div>
+            <div>
                <head>Reading order: Additions as extra notes</head>
                <lb/>
                <p> Additions which appear as extra notes (e.g. at the margins of a page) should be
@@ -427,8 +429,8 @@
                   both text regions and then click the “Links two shapes” button in the “Structural”
                   tab, within the “Metadata” tab. Note: The linking will be part of the XML file but
                   is currently not supported in the export formats. </p>
-            </div2>
-            <div2 n="4">
+            </div>
+            <div>
                <head>Transcription and Virtual Keyboards</head>
                <lb/>
                <p> A transcription which will serve as a basis for a scholarly edition should make
@@ -442,8 +444,8 @@
                   new Unicode characters, you use the green plus button. In the text editor you can
                   use “Backspace” to muve text one line up and “Ctrl” + “Return” to move text one
                   line down. </p>
-            </div2>
-            <div2 n="5">
+            </div>
+            <div>
                <head>Diacritics and ligatures</head>
                <lb/>
                <p> The correct transcription of diacritics and ligatures requires some expert
@@ -473,8 +475,8 @@
                   as “ft” are expressed with a specific grapheme where two graphemes are matched
                   together, and though such ligatures can also be expressed with specific Unicode
                   letters, we recommend transcribing them according to the dictionary. </p>
-            </div2>
-            <div2 n="6">
+            </div>
+            <div>
                <head>Punctuation marks</head>
                <lb/>
                <p> Punctuation marks are transcribed in the same way as characters. Use the
@@ -488,9 +490,9 @@
                   you want to add punctuation marks which do not appear in the original document you
                   may use the “supplied” tag in the “Tagging” tab, within the “Metadata” tab to
                   indicate that the punctuation mark was added by yourself. </p>
-            </div2>
-         </div1>
-         <div1 n="7">
+            </div>
+         </div>
+         <div>
             <head>References</head>
             <lb/>
             <p> To get an overview on scripts from Unicode: http://www.unicode.org/charts/ For
@@ -506,13 +508,13 @@
                “private” section of Unicode, therefore not officially available.
                http://folk.uib.no/hnooh/mufi/
                http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-4-0.pdf </p>
-         </div1>
-         <div1 n="8">
+         </div>
+         <div>
             <head>Credits</head>
             <lb/>
             <p> We would like to thank the many users who have contributed their feedback to help
                improve the Transkribus software. </p>
-         </div1>
+         </div>
       </body>
    </text>
 </TEI>
