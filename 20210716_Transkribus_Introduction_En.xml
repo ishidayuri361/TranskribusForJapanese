@@ -259,7 +259,7 @@
                   the layout analysis. How to draw text regions is explained further down in the
                   text.</p>
                
-               <head xml:lang="jp">自動でテキストのリージョン（範囲）、ライン（行）、ベースライン（罫線）を検出させる</head>
+               <head xml:lang="jp">自動でテキストのリージョン（領域）、ライン（行）、ベースライン（罫線）を検出させる</head>
                <p xml:lang="jp"> メニューバーの「プロファイルProfile」から、「セグメンテーションSegmentation」を選びます。 
                   画面の左側にある「ツールTools」タブを選択し、（一番上の）「レイアウト認識Layout Analysis」セクションを表示します。
                   「メソッドMethod:」で（初期設定である）「CITlabAdvanced」が選択されていることを確認します。 
@@ -289,15 +289,25 @@
 
                <div>
                   <head xml:lang="en">A line has been missed or added by mistake</head>
-                  <p> In the example above the first line had been missed by the program. If you
+                  <p xml:lang="en"> In the example above the first line had been missed by the program. If you
                      would like to add it to the existing text region: Click inside the region so
                      that it is highlighted. Drag the border of the text region as needed. </p>
-                  <head xml:lang="jp">誤ってライン（行）が欠落していたり、追加してしまった場合</head>
+                  <head xml:lang="jp">ライン（行）が欠落していたり、誤って認識されていた場合</head>
+                  <p xml:lang="jp"> 上の例では、最初の行が機械認識によって欠落していました。
+                     この行をテキスト・リージョン（領域）に追加する場合：
+                    ・（認識された）リージョン（領域）内をクリックして、ハイライト（強調）させます。
+                    ・テキスト・リージョンの枠（初期設定では緑色）を読み込ませたいところまでドラッグして広げます。</p>
                </div>
                <div n="2">
-                  <head>A marginal note needs to be split into a separate text region</head>
+                  <head xml:lang="en">A marginal note needs to be split into a separate text region</head>
                   <lb/>
-                  <p> If you need to split one region into two, you can do this with buttons in the
+                  <p xml:lang="en"> If you need to split one region into two, you can do this with buttons in the
+                     Canvas menu. As shown in Figure 6, the “H-button” splits a text region
+                     horizontally. The “V” button splits a text region vertically. The “L-button”
+                     allows you to split a text region with customisable line. </p>
+                  <head  xml:lang="jp">傍注（欄外の注釈）はテキスト・リージョン（領域）を分ける必要があります</head>
+                  <lb/>
+                  <p xml:lang="jp"> If you need to split one region into two, you can do this with buttons in the
                      Canvas menu. As shown in Figure 6, the “H-button” splits a text region
                      horizontally. The “V” button splits a text region vertically. The “L-button”
                      allows you to split a text region with customisable line. </p>
