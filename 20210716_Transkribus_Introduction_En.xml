@@ -303,24 +303,35 @@
                      allows you to split a text region with customisable line. </p>
                </div>
                <div n="3">
-                  <head>Remove a region which is not needed</head>
+                  <head xml:lang="en">Remove a region which is not needed</head>
                   <lb/>
-                  <p> In the example above two regions are overlapping, so one can be deleted. Click
+                  <p xml:lang="en"> In the example above two regions are overlapping, so one can be deleted. Click
                      on the text region you wish to delete, and click the red “Remove a shape”
                      button. </p>
+                  <head xml:lang="jp">不要なリージョン（領域）を削除する</head>
+                  <lb/>
+                  <p xml:lang="jp">上の例では、2つのリージョン（領域、初期設定で緑色の枠）が重なっているため、一つを削除することができる。
+                     削除したいテキスト・リージョンをクリックし、（画面左側に並んだキャンバスメニューから）赤い「図形を削除するRemove a shape」
+                     ボタンをクリックする。</p>
                </div>
                <div n="4">
-                  <head>Merge two regions</head>
+                  <head xml:lang="en">Merge two regions</head>
                   <lb/>
-                  <p> Sometimes the program creates two text regions where only one is needed. In
+                  <p xml:lang="en"> Sometimes the program creates two text regions where only one is needed. In
                      this case you can easily merge the two together. Hold down the “CTRL” button on
                      your keyboard and click on both text regions. Click the “Merges the selected
                      shapes” button in the Canvas menu. </p>
+                  <head xml:lang="jp">2つのリージョン（領域）を結合する</head>
+                  <lb/>
+                  <p xml:lang="jp"> 機械認識では、時々1つのテキスト・リージョン（領域）を2つの異なるリージョンと認識することがあります。
+                     この場合、2つを簡単に結合することができます。キーボードの「コントロールキーCTRL」を押しながら、
+                     結合したい2つのテキスト・リージョンをクリックで選択します。（画面左側に並んだ）キャンバスメニューの「選択した図形を結合Merges the selected shapes」
+                     ボタンをクリックします。</p>
                </div>
                <div n="5">
-                  <head>Correct baselines</head>
+                  <head xml:lang="en">Correct baselines</head>
                   <lb/>
-                  <p> Of course it is also possible to correct the baselines in your document. As
+                  <p xml:lang="en"> Of course it is also possible to correct the baselines in your document. As
                      with the text regions, click on a baseline and you can drag the parts of the
                      line, split a line into two or merge two lines together. You can also delete a
                      baseline and draw a new one from scratch. Click the “+BL” button in the Canvas
@@ -328,6 +339,15 @@
                      line. Note: Baselines are most important for HTR; line regions do not need to
                      be corrected. </p>
                </div>
+               <head xml:lang="jp">ベースライン（罫線）を修正する</head>
+               <lb/>
+               <p xml:lang="jp"> もちろん、ドキュメントのベースライン（罫線、初期設定で紫色の蛍光ペン）を修正することもできます。
+                  テキスト・リージョン（領域）と同様に、ベースラインをクリックで選択してから、罫線の一部を移動したり、2つに分割したり、
+                  結合したりできます。ベースラインを削除して、
+                  新たなベースラインを最初から描き直すこともできます。（画面左側に並んだ）キャンバスメニューの「ベースラインを足す＋BL」ボタンをクリックします。
+                  （読み取りたいドキュメント上で）一度クリックするとベースラインの描画が開始され、ダブルクリックするとベースライン作成が終了します。
+                  注: ベースライン（罫線、初期設定で紫色の蛍光ペン）はHTRで最も重要です。ライン（行、初期設定で水色の枠線）やリージョン（領域、初期設定で緑色の枠線）は
+                  修正する必要がありません。 </p>
             </div>
          
          <div>
