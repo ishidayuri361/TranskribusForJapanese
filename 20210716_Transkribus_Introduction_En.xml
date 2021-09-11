@@ -82,7 +82,7 @@
             </list> Transkribusでドキュメントを翻刻するには、次の3つのステップがあります：<lb/> ステップ 1：アップロード<lb/><list>
                <item>ドキュメントをTranskribusプラットフォームにアップロードします。</item>
             </list> ステップ2：セグメンテーション<lb/><list>
-               <item>自動セグメンテーションツールを実行して、ドキュメントのベースラインを作成します。 </item>
+               <item>自動セグメンテーションツールを実行して、ドキュメントのベースライン（基準線）を作成します。 </item>
             </list> ステップ3: 翻刻<lb/><list>
                <item>セグメンテーションされた行のテキストを翻刻します。</item>
             </list> この形式の単純な翻刻は、HTR技術のトレーニングには十分です。<lb/>
@@ -222,8 +222,8 @@
             <head xml:lang="jp">セグメンテーション – レイアウトの認識</head>
             <p xml:lang="jp"> ドキュメントをTranskribusにアップロードしたら、セグメンテーションの準備が整います。
                Transkribusでドキュメントを翻刻するには、ドキュメントをテキスト・リージョン（領域）、ライン（行）、
-               ベースライン（罫線）の範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
-               必要があります。印字されたスペース、テキスト・リージョン（領域）、ライン（行）、ベースライン（罫線）の範囲など、 
+               ベースライン（基準線）の範囲をそれぞれ成形する必要があります。HTRを読み取るには、文字と画像を合致させる
+               必要があります。印字されたスペース、テキスト・リージョン（領域）、ライン（枠線）、ベースライン（基準線）の範囲など、 
                セグメント化されたすべての要素は、座標とともに「PAGE file」に保存されます。 </p>
          </div>
          <div>   
@@ -241,7 +241,7 @@
                <p xml:lang="ja"> プロファイルを表示させることで、セグメンテーションや翻刻の状態を確認することができます。
                   メニューバーの「Profiles」ボタンをクリックすると、「セグメンテーションSegmentation」や
                   「翻刻Transcription」を選択することができます。「セグメンテーションSegmentation」のプロファイルでは、
-                  （初期設定で水色になっている）ベースライン（罫線）の線が赤色でハイライトされ、
+                  （初期設定で水色になっている）ベースライン（基準線）の線が赤色でハイライトされ、
                   自動で読み取ったセグメンテーションのエラーを見つけやすくなります。
                   「翻刻Transcription」のプロファイルでは、（画像の下方に）テキスト編集フィールドが表示され、
                   ドキュメントの翻刻をすることができます。
@@ -259,14 +259,14 @@
                   the layout analysis. How to draw text regions is explained further down in the
                   text.</p>
                
-               <head xml:lang="jp">自動でテキストのリージョン（領域）、ライン（行）、ベースライン（罫線）を検出させる</head>
+               <head xml:lang="jp">自動でテキストのリージョン（領域）、ライン（枠線）、ベースライン（基準線）を検出させる</head>
                <p xml:lang="jp"> メニューバーの「プロファイルProfile」から、「セグメンテーションSegmentation」を選びます。 
                   画面の左側にある「ツールTools」タブを選択し、（一番上の）「レイアウト認識Layout Analysis」セクションを表示します。
                   「メソッドMethod:」で（初期設定である）「CITlabAdvanced」が選択されていることを確認します。 
                   レイアウト認識を読み込ませる範囲を、現在表示されているページ（初期設定）か、指定したページ（ページ数を入力）から選びます。
                   「テキストのリージョンを認識するFind Text Regions」（初期設定）が選択されていることを確認します。 
                   「実行Run」ボタンをクリックします。
-                  翻刻するテキストのリージョン（領域）を手動で指定してから、その範囲内のベースライン（罫線）を検出させたい場合、
+                  翻刻するテキストのリージョン（領域）を手動で指定してから、その範囲内のベースライン（基準線）を検出させたい場合、
                   レイアウト認識を開始する前に「テキストのリージョンを認識するFind Text Regions」のチェックを外してください。
                   テキスト・リージョン（領域）を指定する方法は、別項で説明します。 </p>
             </div>
@@ -292,7 +292,7 @@
                   <p xml:lang="en"> In the example above the first line had been missed by the program. If you
                      would like to add it to the existing text region: Click inside the region so
                      that it is highlighted. Drag the border of the text region as needed. </p>
-                  <head xml:lang="jp">ライン（行）が欠落していたり、誤って認識されていた場合</head>
+                  <head xml:lang="jp">ライン（枠線）が欠落していたり、誤って認識されていた場合</head>
                   <p xml:lang="jp"> 上の例では、最初の行が機械認識によって欠落していました。
                      この行をテキスト・リージョン（領域）に追加する場合：
                     ・（認識された）リージョン（領域）内をクリックして、ハイライト（強調）させます。
@@ -307,10 +307,11 @@
                      allows you to split a text region with customisable line. </p>
                   <head  xml:lang="jp">傍注（欄外の注釈）はテキスト・リージョン（領域）を分ける必要があります</head>
                   <lb/>
-                  <p xml:lang="jp"> If you need to split one region into two, you can do this with buttons in the
-                     Canvas menu. As shown in Figure 6, the “H-button” splits a text region
-                     horizontally. The “V” button splits a text region vertically. The “L-button”
-                     allows you to split a text region with customisable line. </p>
+                  <p xml:lang="jp"> 1つのリージョン（領域）を2つに分割する場合、
+                     （画面左側に並んだ）キャンバスメニューのボタンを使用します。
+                     図6の（キャンバスメニューの）「Hボタン」がテキスト・リージョンを水平方向に分割します。
+                     「Vボタン」がテキスト・リージョンを垂直方向に分割します。「Lボタン」で
+                     テキスト・リージョンを好きな行にカスタマイズして分割できます。 </p>
                </div>
                <div n="3">
                   <head xml:lang="en">Remove a region which is not needed</head>
@@ -349,21 +350,21 @@
                      line. Note: Baselines are most important for HTR; line regions do not need to
                      be corrected. </p>
                </div>
-               <head xml:lang="jp">ベースライン（罫線）を修正する</head>
+               <head xml:lang="jp">ベースライン（基準線）を修正する</head>
                <lb/>
-               <p xml:lang="jp"> もちろん、ドキュメントのベースライン（罫線、初期設定で紫色の蛍光ペン）を修正することもできます。
+               <p xml:lang="jp"> もちろん、ドキュメントのベースライン（基準線、初期設定で紫色の蛍光ペン）を修正することもできます。
                   テキスト・リージョン（領域）と同様に、ベースラインをクリックで選択してから、罫線の一部を移動したり、2つに分割したり、
                   結合したりできます。ベースラインを削除して、
                   新たなベースラインを最初から描き直すこともできます。（画面左側に並んだ）キャンバスメニューの「ベースラインを足す＋BL」ボタンをクリックします。
                   （読み取りたいドキュメント上で）一度クリックするとベースラインの描画が開始され、ダブルクリックするとベースライン作成が終了します。
-                  注: ベースライン（罫線、初期設定で紫色の蛍光ペン）はHTRで最も重要です。ライン（行、初期設定で水色の枠線）やリージョン（領域、初期設定で緑色の枠線）は
+                  注: ベースライン（基準線、初期設定で紫色の蛍光ペン）はHTRで最も重要です。ライン（枠線、初期設定で水色の枠線）やリージョン（領域、初期設定で緑色の枠線）は
                   修正する必要がありません。 </p>
             </div>
          
          <div>
-            <head>Simple transcription – for HTR+ training</head>
+            <head xml:lang="en">Simple transcription – for HTR+ training</head>
             <lb/>
-            <p> Select the “Transcription” viewing profile from the Main menu. You will see the Text
+            <p xml:lang="en"> Select the “Transcription” viewing profile from the Main menu. You will see the Text
                Editor field below the image: For each line/baseline in the image you will find a
                corresponding line in the Text Editor. The image and the text are connected in this
                way. Transcribe the text according to the language of your source document. Use the
@@ -371,6 +372,15 @@
                but they should not work on the same page simultaneously. You can let other
                Transkribus users see your documents by clicking the “User Manager” button in the
                “Server” tab. </p>
+            <head xml:lang="jp">基本的な翻刻 – HTR+トレーニング</head>
+            <lb/>
+            <p xml:lang="jp"> メインメニューから「文字起こしTranscription」表示プロファイルを選択します。 
+               画面の下に［テキストエディタ Text Editor］フィールドが表示されます。画像のライン（枠線）/ベースライン（基準線）ごとに、
+               テキストエディタに対応する行があります、。画像とテキストは、このように結びついています。
+               画像資料の言語に従って、テキストを書き写します。文字入力にはキーボードをを使用します。
+               一つのドキュメントを複数の人が作業することができますが、同じページで同時に作業することはできません。
+               「サーバーServer」タブの「ユーザーUser」ボタンをクリックすると、他のTranskribusのユーザーに
+               ドキュメントを共有表示させることができます。 </p>
          </div>
          <div>
             <head>Train a HTR model</head>
