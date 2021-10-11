@@ -103,6 +103,32 @@
                         <seg xml:lang="ja">トランスクリバス運営者は、データ保護と個人情報に関するEUの指令にすべて従います。
                            利用者の個人情報を尊重し、データはサービスの向上のため、未来の人文科学とコンピュータ科学を支援するために利用します！</seg></s></p><lb/>
                   </div>
+                                    <div n="3" type="chapter">
+                     <head><s><seg xml:lang="en">Download Transkribus from the website</seg>
+                        <seg xml:lang="ja">ウェブサイトからのダウンロード</seg></s></head>
+                     <p>
+                        <s><seg xml:lang="en">Transkribus can be used for several purposes. The most important are:</seg><lb/>
+                           <seg xml:lang="ja">トランスクリバスはいくつかの目的のために使用できます。最も重要なのは以下の点です。</seg></s><lb/>
+                     </p>
+                     <div n="1" type="section">
+                        <p><s><seg xml:lang="en">Go to the <ref target="https://readcoop.eu/transkribus/download/">Transkribus download page</ref></seg><lb/>
+                           <seg xml:lang="ja"><ref target="https://readcoop.eu/transkribus/download/">トランスクリバスのダウンロード用ページ</ref>を開きます。</seg></s></p><lb/>
+                     </div>
+                     <div n="2" type="section">
+                        <p><s><seg xml:lang="en">Transkribus runs on Windows, MacOS and Linux. If you need help installing the platform, you can have a look <ref target="https://readcoop.eu/transkribus/wiki/download-and-installation/">here</ref>.</seg><lb/>
+                           <seg xml:lang="ja">トランスクリバスはWindows、MacOS、Linuxで動きます。環境（プラットフォーム）の設定については、<ref target="https://readcoop.eu/transkribus/wiki/download-and-installation/">こちら</ref>を参考にしてください。</seg></s></p><lb/>
+                     </div>
+                     <div n="3" type="section">
+                        <p><s><seg xml:lang="en">If you use MacOS an error message may appear when you try to open Transkribus for the first time. To remedy this:
+                           right click the Track Pad to open the Context Menu and add a security exception for Transkribus.</seg><lb/>
+                           <seg xml:lang="ja">MacOSで初めてトランスクリバスを開いた時にエラーメッセージが表示された場合、
+                              トラックバッドを右クリックしてコンテクストメニューを開き、トランスクリバスをセキュリティ設定の例外にしてください。</seg></s></p><lb/>
+                     </div>
+                     <div n="4" type="section">
+                        <p><s><seg xml:lang="en">Once you have downloaded Transkribus, make sure you unzip the file. The program cannot be started from the zipped file.</seg><lb/>
+                           <seg xml:lang="ja">トランスクリバスをダウンロードしたら、必ずファイルを展開してください。展開しないとプログラムが始まりません。</seg></s></p><lb/>
+                     </div>
+                  </div>
                </div>
             </div>
       </body>
