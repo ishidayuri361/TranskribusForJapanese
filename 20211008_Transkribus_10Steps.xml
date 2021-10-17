@@ -137,7 +137,7 @@
             </div>
             <div n="3" type="section">
                <p><s><seg xml:lang="en">You can find it by clicking the “Collections” button in the “Server” tab.</seg><lb/>
-                  <seg xml:lang="ja">「サーバ（Server）」タブにある「コレクション（Collections）」ボタンを押して探してみてください。</seg><lb/></s></p>
+                  <seg xml:lang="ja">「サーバ（Server）」タブにある「コレクション（Collections）」ボタンをクリックして探してみてください。</seg><lb/></s></p>
             </div>
          </div>
          <div n="5" type="chapter">
@@ -159,7 +159,7 @@
                   For more information: <ref target="https://scantent.cvl.tuwien.ac.at/en">https://scantent.cvl.tuwien.ac.at/en</ref></seg><lb/>
                   <seg xml:lang="ja">自分でスキャンした文書をアップロードすることができます。
                      アンドロイドのスマートフォン用のDocScanアプリを使って画像を撮影すれば、トランスクリバスに直接アップロードすることができます。
-                     詳細は<ref target="https://scantent.cvl.tuwien.ac.at/en">https://scantent.cvl.tuwien.ac.at/en</ref>をご覧ください。</seg><lb/></s></p>
+                     詳細は<ref target="https://scantent.cvl.tuwien.ac.at/en">こちら</ref>をご覧ください。</seg><lb/></s></p>
             </div>
             <div n="4" type="section">
                <p><s><seg xml:lang="en">You may also download documents from the Internet and upload them to Transkribus.
@@ -172,14 +172,14 @@
             <div n="5" type="section">
                <p><s><seg xml:lang="en">Click the “Import document(s)” button to transfer the images from your computer to the platform.
                   Note: the images need to reside in a separate folder on your computer before you upload them to Transkribus!</seg><lb/>
-                  <seg xml:lang="ja">「文書の取込み（Import document(s)）」を押し、画像を自分のPCからトランスクリバスの環境（プラットフォーム）に転送しましょう。
+                  <seg xml:lang="ja">「文書の取込み（Import document(s)）」をクリックし、画像を自分のPCからトランスクリバスの環境（プラットフォーム）に転送しましょう。
                      注意：トランスクリパスにアップロードする前に、画像は自分のPCの専用フォルダに入れておきましょう。</seg><lb/></s></p>
             </div>
             <div n="6" type="section">
                <p><s><seg xml:lang="en">You can add your documents to one of your existing collections or create a new one
                   by clicking the “Add to collection” button at the bottom of the “Document ingest/upload” box and then clicking “Create”.</seg><lb/>
                   <seg xml:lang="ja">自分の文書を既存のコレクションのどれかに加えることができます。
-                     もしくは、「文書の取込み/アップロード（Document ingest/upload）」ウィンドウの「コレクションへの追加（Add to collection）」ボタンを押し、
+                     もしくは、「文書の取込み/アップロード（Document ingest/upload）」ウィンドウの「コレクションへの追加（Add to collection）」ボタンをクリックし、
                      それから「作成（Create）」をクリックして作成した新しいコレクションに加えることができます。</seg><lb/></s></p>
             </div>
             <div n="7" type="section">
@@ -225,6 +225,52 @@
                   <seg xml:lang="ja">文書の行や文章範囲が自動で検出されます。</seg><lb/></s></p>
             </div>
          </div>
+         <div n="7" type="chapter">
+            <head><s><seg xml:lang="en">Start your transcription</seg>
+               <seg xml:lang="ja">転記の開始</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Once the baselines are visible on your image you can write text into the Text Editor field.</seg><lb/>
+                  <seg xml:lang="ja">画像に基準線（baselines）が見えるようになれば、文章編集欄に文章を入力することができます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Click on the “Viewing Profiles” button and select the “Transcription” view.</seg><lb/>
+                  <seg xml:lang="ja">「分析結果表示（Viewing Profiles）」ボタンをクリックし、「転記（Transcription）」表示を選択してください。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">For each baseline, there will be a corresponding line in the Text Editor.
+                  Transcribe the text line by line, exactly as it appears in the image.</seg><lb/>
+                  <seg xml:lang="ja">各基準線（baselines）は、文章編集欄の行に対応しています。
+                     画像に見えるとおり正確に一行ずつ文章を転記してください。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">Special characters can be found in the “Virtual Keyboards” button in the Text Editor toolbar.</seg><lb/>
+                  <seg xml:lang="ja">文章編集欄のツールバーにある「仮想キーボード（Virtual Keyboards）」ボタンから特殊文字を探すことができます。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">If you are working in a team, you might find it easier to transcribe in the Transkribus Web Interface.
+                  This is a lite version of Transkribus which is simple to use: <ref target="https://transkribus.eu/r/read/projects/">https://transkribus.eu/r/read/projects/</ref></seg><lb/>
+                  <seg xml:lang="ja">チームで取り組んでいる場合は、トランスクリバスのウェブインターフェースで転記を簡単に探すことができます。
+                     使いやすいトランスクリバスの簡易版は<ref target="https://transkribus.eu/r/read/projects/">こちら</ref>です。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="8" type="chapter">
+            <head><s><seg xml:lang="en">Save and export your transcription</seg>
+               <seg xml:lang="ja">転記の保存と転送</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Press the “Save” button in the Main Menu to save the document in Transkribus.</seg><lb/>
+                  <seg xml:lang="ja">メインメニューの「保存（Save）」ボタンを押して、トランスクリバスに文書を保存します。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">If you click on the “Versions” button in the “Server” tab, you will see that a new version has been created.
+                  This means that you can always access previous versions of a document should you need to.</seg><lb/>
+                  <seg xml:lang="ja">「サーバ（Server）」タブの「版（Versions）」ボタンをクリックすれば、新しく作成された版を見ることができます。
+                     必要であれば、文書の以前の版を開くことができるということです。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">You can also export the whole document at any point of the process by clicking the “Export document” button.</seg><lb/>
+                  <seg xml:lang="ja">作業のどの時点であれ、「文書の転送（Export document）」ボタンをクリックすれば、文書全体を転送することもできます。</seg><lb/></s></p>
+            </div>
+         </div>
       </body>
    </text>
-</TEI>                 
+</TEI>
