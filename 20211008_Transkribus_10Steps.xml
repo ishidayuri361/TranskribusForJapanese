@@ -157,9 +157,46 @@
                <p><s><seg xml:lang="en">You can upload documents which you have scanned yourself.
                   You can also use our DocScan app for Android smartphones to take images and upload them directly to Transkribus.
                   For more information: <ref target="https://scantent.cvl.tuwien.ac.at/en">https://scantent.cvl.tuwien.ac.at/en</ref></seg><lb/>
-                  <seg xml:lang="ja">自分でスキャンした文書をアップロードすることもできます。
+                  <seg xml:lang="ja">自分でスキャンした文書をアップロードすることができます。
                      アンドロイドのスマートフォン用のDocScanアプリを使って画像を撮影すれば、トランスクリバスに直接アップロードすることができます。
                      詳細は<ref target="https://scantent.cvl.tuwien.ac.at/en">https://scantent.cvl.tuwien.ac.at/en</ref>をご覧ください。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">You may also download documents from the Internet and upload them to Transkribus.
+                  Many libraries and archives follow Open Access policies and are therefore encouraging further usage of their collection
+                  – you can ask archives and libraries directly if you can upload images of their documents to Transkribus!</seg><lb/>
+                  <seg xml:lang="ja">インターネットからダウンロードした文書をトランスクリバスにアップロードすることもできます。
+                  多くの図書館や文書館が無料公開を方針としており、所蔵資料のさらなる活用が奨励されています。
+                  所蔵資料の画像をトランスクリバスにアップロードできるか、図書館や文書館に直接問い合わせてみましょう！</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">Click the “Import document(s)” button to transfer the images from your computer to the platform.
+                  Note: the images need to reside in a separate folder on your computer before you upload them to Transkribus!</seg><lb/>
+                  <seg xml:lang="ja">「文書の取込み（Import document(s)）」を押し、画像を自分のPCからトランスクリバスの環境（プラットフォーム）に転送しましょう。
+                     注意：トランスクリパスにアップロードする前に、画像は自分のPCの専用フォルダに入れておきましょう。</seg><lb/></s></p>
+            </div>
+            <div n="6" type="section">
+               <p><s><seg xml:lang="en">You can add your documents to one of your existing collections or create a new one
+                  by clicking the “Add to collection” button at the bottom of the “Document ingest/upload” box and then clicking “Create”.</seg><lb/>
+                  <seg xml:lang="ja">自分の文書を既存のコレクションのどれかに加えることができます。
+                     もしくは、「文書の取込み/アップロード（Document ingest/upload）」ウィンドウの「コレクションへの追加（Add to collection）」ボタンを押し、
+                     それから「作成（Create）」をクリックして作成した新しいコレクションに加えることができます。</seg><lb/></s></p>
+            </div>
+            <div n="7" type="section">
+               <p><s><seg xml:lang="en">To access your documents, click on the “Collections” button in the “Server” tab and choose your collection.
+                  Then double-click on the documents in the box at the bottom of the “Server” tab to open them.</seg><lb/>
+                  <seg xml:lang="ja">自分の文書を開くには、「サーバ（Server）」タブにある「コレクション（Collections）」ボタンをクリックし、自分のコレクションを選択してください。
+                     「サーバ（Server）」タブの下にあるボックスで目的の文書をダブルクリックし、開いてください。</seg><lb/></s></p>
+            </div>
+            <div n="8" type="section">
+               <p><s><seg xml:lang="en">All documents uploaded to Transkribus are private by default.
+                  You can give other users authorisation to view your documents if you wish.
+                  Use the “User Manager” button in the “Server” tab to add users to your collection.
+                  You can only share collections with users who have a Transkribus account.</seg><lb/>
+                  <seg xml:lang="ja">初期設定では、トランスクリバスにアップロードされた文書は全て個人用となります。
+                     自分の文書を見る権限を他の利用者に与えることもできます。
+                     「サーバ（Server）」タブにある「利用者管理（User Manager）」ボタンを押し、自分のコレクションに他の利用者を加えてください。
+                     コレクションの共有ができるのは、トランスクリバスのアカウントをもっている利用者のみです。</seg><lb/></s></p>
             </div>
          </div>
          <div n="6" type="chapter">
