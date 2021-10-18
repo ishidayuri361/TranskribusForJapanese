@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <s>
+                  <seg xml:lang="en">How To Use Transkribus in 10 Steps</seg>
+                  <seg xml:lang="ja">10段階で分かるトランスクリバス</seg>
+               </s>
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>https://readcoop.eu/transkribus/howto/use-transkribus-in-10-steps/</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <s><seg xml:lang="en">This document is a basic introduction to Transkribus.
+            It provides a simple standard workflow for working with the platform.
+            If you need more detailed instructions on the functions of Transkribus please have a look at our other <ref target="https://readcoop.eu/transkribus/resources/how-to-guides/">How to Guides</ref>.</seg><lb/>
+            <seg xml:lang="ja">ここではトランスクリバスの基本について紹介をします。
+               トランスクリバスを使用するための標準的な流れを簡潔に示します。
+               トランスクリバスの機能についてより詳しい説明が必要な場合は、他の<ref target="https://readcoop.eu/transkribus/resources/how-to-guides/">使い方の説明</ref>をご覧ください。</seg><lb/></s>
+         </p>
+         <div n="1" type="chapter">
+            <head><s><seg xml:lang="en">Introduction</seg><seg xml:lang="ja">はじめに</seg></s></head>
+            <p>
+               <s><seg xml:lang="en">Transkribus can be used for several purposes. The most important are:</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスはいくつかの目的のために使用できます。最も重要なのは以下の点です。</seg><lb/></s>
+            </p>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Transcribe documents for a scholarly edition</seg><lb/>
+                  <seg xml:lang="ja">学術的文書を転写すること。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Create training data to feed the Handwritten Text Recognition (HTR+) system 
+                  so it can learn to decipher your historical documents.</seg><lb/>
+                  <seg xml:lang="ja">歴史的文書の解読ができるよう、手書きテキスト認識（HTR+）システム用訓練データを作成すること。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">Run HTR+ on your documents and receive automatically generated transcripts.</seg><lb/>
+                  <seg xml:lang="ja">手書きテキスト認識を使い、自動で文書を転写すること。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">Search for distinct words in your document collections with Keyword Spotting 
+                  which is much more powerful than standard full-text search.</seg><lb/>
+                  <seg xml:lang="ja">通常の全文検索よりも強力な用語抽出（キーワードスポッティング）で、特定の単語を検索すること。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">The platform lives from the community. 
+                  The more data uploaded to Transkribus, the more efficient the program and especially the Handwritten Text Recognition will get</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスの環境（プラットフォーム）は利用者（コミュニティ）に支えられているということ。
+                     より多くのデータがトランスクリバスにアップロードされれば、トランスクリバスの処理（プログラム）、特に手書きテキスト認識の効率が向上します。</seg><lb/></s></p>
+            </div>
+            <div>
+               <p><s><seg xml:lang="en">Transkribus is a research infrastructure,
+                  which was established as part of the H2020 Project READ (Recognition and Enrichment of Archival Documents).</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスは、H2020研究課題READ（保存資料に対するテキスト認識とその改良）の一環として設立された研究設備基盤です。</seg><lb/></s></p>
+               <p><s><seg xml:lang="en">Take some time to explore Transkribus and become familiar with how it works. 
+                  To make it easier we have created several How to Guides, which give instructions on the different functions of the platform. 
+                  You can find them within our <ref target="https://readcoop.eu/transkribus/resources/how-to-guides/">Resource Base</ref>. </seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスを少し操作してみて、仕組みに慣れてください。
+                     簡単にできるよう、トランスクリバスのもつさまざまな機能について、使い方の説明をいくつか用意しました。<ref target="https://readcoop.eu/transkribus/resources/how-to-guides/">基本資料</ref>をご覧ください。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="2" type="chapter">
+            <head><s><seg xml:lang="en">To use Transkribus―register at the website</seg><seg xml:lang="ja">トランスクリバスの使い方―ウェブサイトでの登録</seg></s></head>
+            <p>
+               <s><seg xml:lang="en">Transkribus can be used for several purposes. The most important are:</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスはいくつかの目的のために使用できます。最も重要なのは以下の点です。</seg><lb/></s>
+            </p>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Go to our <ref target="https://readcoop.eu/transkribus/">Transkribus page</ref></seg><lb/>
+                  <seg xml:lang="ja"><ref target="https://readcoop.eu/transkribus/">トランスクリバスのページ</ref>を開いてください</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Read and accept <sic>out</sic> <ref target="https://readcoop.eu/terms-and-conditions/">Terms <reg>and</reg> Conditions</ref> and our <ref target="https://readcoop.eu/privacy-policy/">Privacy Policy</ref></seg><lb/>
+                  <seg xml:lang="ja"><ref target="https://readcoop.eu/terms-and-conditions/">利用規約</ref>と<ref target="https://readcoop.eu/privacy-policy/">個人情報保護方針</ref>を読んで同意してください</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">All documents uploaded to Transkribus are “private”, which means that no one except you has access to them.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスに転送された資料はすべて「個人用」で、自分しか利用できません。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">The Transkribus team fully supports all EU directives on data protection and privacy.
+                  We will respect your privacy and only use the data you give us to improve our services and support future research in humanities and computer science!</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバス運営者は、データ保護と個人情報に関するEUの指令にすべて従います。
+                     利用者の個人情報を尊重し、データはサービスの向上のため、未来の人文科学とコンピュータ科学を支援するために利用します！</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="3" type="chapter">
+            <head><s><seg xml:lang="en">Download Transkribus from the website</seg><seg xml:lang="ja">ウェブサイトからのダウンロード</seg></s></head>
+            <p>
+               <s><seg xml:lang="en">Transkribus can be used for several purposes. The most important are:</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスはいくつかの目的のために使用できます。最も重要なのは以下の点です。</seg><lb/></s>
+            </p>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Go to the <ref target="https://readcoop.eu/transkribus/download/">Transkribus download page</ref></seg><lb/>
+                  <seg xml:lang="ja"><ref target="https://readcoop.eu/transkribus/download/">トランスクリバスのダウンロード用ページ</ref>を開きます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Transkribus runs on Windows, MacOS and Linux. If you need help installing the platform, you can have a look <ref target="https://readcoop.eu/transkribus/wiki/download-and-installation/">here</ref>.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスはWindows、MacOS、Linuxで動きます。環境（プラットフォーム）の設定については、<ref target="https://readcoop.eu/transkribus/wiki/download-and-installation/">こちら</ref>を参考にしてください。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">If you use MacOS an error message may appear when you try to open Transkribus for the first time. To remedy this:
+                  right click the Track Pad to open the Context Menu and add a security exception for Transkribus.</seg><lb/>
+                  <seg xml:lang="ja">MacOSで初めてトランスクリバスを開いた時にエラーメッセージが表示された場合、
+                     トラックバッドを右クリックしてコンテクストメニューを開き、トランスクリバスをセキュリティ設定の例外にしてください。</seg><lb/></s></p>
+            </div>
+         </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">Once you have downloaded Transkribus, make sure you unzip the file. The program cannot be started from the zipped file.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスをダウンロードしたら、必ずファイルを展開してください。展開しないとプログラムが始まりません。</seg><lb/></s></p>
+           </div>
+         <div n="4" type="chapter">
+            <head><s><seg xml:lang="en">Open Transkribus</seg>
+               <seg xml:lang="ja">トランスクリバスを開く</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Start the tool and use the “Login” button in the “Server” tab.</seg><lb/>
+                  <seg xml:lang="ja">「サーバ（Server）」タブの「ログイン（Login）」ボタンを押します。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">You will have access to your private collection named after your email address. 
+                  This collection includes some test documents that you can experiment with.</seg><lb/>
+                  <seg xml:lang="ja">メールアドレスが名付けられた個人用コレクションが利用できるようになります。
+                     このコレクションには練習用の文書が入っています。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">You can find it by clicking the “Collections” button in the “Server” tab.</seg><lb/>
+                  <seg xml:lang="ja">「サーバ（Server）」タブにある「コレクション（Collections）」ボタンをクリックして探してみてください。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="5" type="chapter">
+            <head><s><seg xml:lang="en">Upload your documents</seg>
+               <seg xml:lang="ja">文書のアップロード</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Transkribus allows you to work with your own documents, either locally or by uploading them to the server.</seg><lb/>
+                  <seg xml:lang="ja">ローカル接続もしくはサーバへのアップロードをすれば、トランスクリバスで自分の文書を扱うことができます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Automated processes can only be performed if the documents are uploaded to the Transkribus platform.
+                  The platform can process PDF, JPEG, PNG and TIFF files. JP2 files are not supported unfortunately.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスの環境（プラットフォーム）に文書がアップロードされた場合のみ、自動で処理されます。
+                  PDF、JPEG、PNG、TIFFファイルの処理ができます。JP2ファイルは残念ながら扱えません。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">You can upload documents which you have scanned yourself.
+                  You can also use our DocScan app for Android smartphones to take images and upload them directly to Transkribus.
+                  For more information: <ref target="https://scantent.cvl.tuwien.ac.at/en">https://scantent.cvl.tuwien.ac.at/en</ref></seg><lb/>
+                  <seg xml:lang="ja">自分でスキャンした文書をアップロードすることができます。
+                     アンドロイドのスマートフォン用のDocScanアプリを使って画像を撮影すれば、トランスクリバスに直接アップロードすることができます。
+                     詳細は<ref target="https://scantent.cvl.tuwien.ac.at/en">こちら</ref>をご覧ください。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">You may also download documents from the Internet and upload them to Transkribus.
+                  Many libraries and archives follow Open Access policies and are therefore encouraging further usage of their collection
+                  – you can ask archives and libraries directly if you can upload images of their documents to Transkribus!</seg><lb/>
+                  <seg xml:lang="ja">インターネットからダウンロードした文書をトランスクリバスにアップロードすることもできます。
+                  多くの図書館や文書館が無料公開を方針としており、所蔵資料のさらなる活用が奨励されています。
+                  所蔵資料の画像をトランスクリバスにアップロードできるか、図書館や文書館に直接問い合わせてみましょう！</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">Click the “Import document(s)” button to transfer the images from your computer to the platform.
+                  Note: the images need to reside in a separate folder on your computer before you upload them to Transkribus!</seg><lb/>
+                  <seg xml:lang="ja">「文書の取込み（Import document(s)）」をクリックし、画像を自分のPCからトランスクリバスの環境（プラットフォーム）に転送しましょう。
+                     注意：トランスクリパスにアップロードする前に、画像は自分のPCの専用フォルダに入れておきましょう。</seg><lb/></s></p>
+            </div>
+            <div n="6" type="section">
+               <p><s><seg xml:lang="en">You can add your documents to one of your existing collections or create a new one
+                  by clicking the “Add to collection” button at the bottom of the “Document ingest/upload” box and then clicking “Create”.</seg><lb/>
+                  <seg xml:lang="ja">自分の文書を既存のコレクションのどれかに加えることができます。
+                     もしくは、「文書の取込み/アップロード（Document ingest/upload）」ウィンドウの「コレクションへの追加（Add to collection）」ボタンをクリックし、
+                     それから「作成（Create）」をクリックして作成した新しいコレクションに加えることができます。</seg><lb/></s></p>
+            </div>
+            <div n="7" type="section">
+               <p><s><seg xml:lang="en">To access your documents, click on the “Collections” button in the “Server” tab and choose your collection.
+                  Then double-click on the documents in the box at the bottom of the “Server” tab to open them.</seg><lb/>
+                  <seg xml:lang="ja">自分の文書を開くには、「サーバ（Server）」タブにある「コレクション（Collections）」ボタンをクリックし、自分のコレクションを選択してください。
+                     「サーバ（Server）」タブの下にあるボックスで目的の文書をダブルクリックし、開いてください。</seg><lb/></s></p>
+            </div>
+            <div n="8" type="section">
+               <p><s><seg xml:lang="en">All documents uploaded to Transkribus are private by default.
+                  You can give other users authorisation to view your documents if you wish.
+                  Use the “User Manager” button in the “Server” tab to add users to your collection.
+                  You can only share collections with users who have a Transkribus account.</seg><lb/>
+                  <seg xml:lang="ja">初期設定では、トランスクリバスにアップロードされた文書は全て個人用となります。
+                     自分の文書を見る権限を他の利用者に与えることもできます。
+                     「サーバ（Server）」タブにある「利用者管理（User Manager）」ボタンを押し、自分のコレクションに他の利用者を加えてください。
+                     コレクションの共有ができるのは、トランスクリバスのアカウントをもっている利用者のみです。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="6" type="chapter">
+            <head><s><seg xml:lang="en">Segment your documents into lines</seg>
+               <seg xml:lang="ja">文書を行に分ける</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">To feed the HTR engine with training data your documents need to be segmented into lines.
+                  This can be done automatically in Transkribus.</seg><lb/>
+                  <seg xml:lang="ja">文書をHTRエンジンにかけるには、行に分けられていなければなりません。
+                     トランスクリバスでは自動でできます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Open the “Tools” tab.</seg><lb/>
+                  <seg xml:lang="ja">「ツール（Tools）」タブを開いてください。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">Make sure “Find Text Regions” is selected and press “Run”.</seg><lb/>
+                  <seg xml:lang="ja">「テキスト範囲検索（Find Text Regions）」が選択されているのを確認し、「実行（Run）」を押してください。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">You can choose to segment the current page or a batch of pages.</seg><lb/>
+                  <seg xml:lang="ja">現在の頁もしくは複数の頁を選んで行に分けてください。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">The lines and text regions in your document will be detected automatically.</seg><lb/>
+                  <seg xml:lang="ja">文書の行やテキスト範囲が自動で検出されます。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="7" type="chapter">
+            <head><s><seg xml:lang="en">Start your transcription</seg>
+               <seg xml:lang="ja">転記の開始</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Once the baselines are visible on your image you can write text into the Text Editor field.</seg><lb/>
+                  <seg xml:lang="ja">画像に基準線（baselines）が見えるようになれば、テキスト編集欄にテキストを入力することができます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Click on the “Viewing Profiles” button and select the “Transcription” view.</seg><lb/>
+                  <seg xml:lang="ja">「分析結果表示（Viewing Profiles）」ボタンをクリックし、「転記（Transcription）」表示を選択してください。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">For each baseline, there will be a corresponding line in the Text Editor.
+                  Transcribe the text line by line, exactly as it appears in the image.</seg><lb/>
+                  <seg xml:lang="ja">各基準線（baselines）は、テキスト編集欄の行に対応しています。
+                     画像に見えるとおり正確に一行ずつテキストを転記してください。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">Special characters can be found in the “Virtual Keyboards” button in the Text Editor toolbar.</seg><lb/>
+                  <seg xml:lang="ja">テキスト編集欄のツールバーにある「仮想キーボード（Virtual Keyboards）」ボタンから特殊文字を探すことができます。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">If you are working in a team, you might find it easier to transcribe in the Transkribus Web Interface.
+                  This is a lite version of Transkribus which is simple to use: <ref target="https://transkribus.eu/r/read/projects/">https://transkribus.eu/r/read/projects/</ref></seg><lb/>
+                  <seg xml:lang="ja">チームで取り組んでいる場合は、トランスクリバスのウェブインターフェースで転記を簡単に探すことができます。
+                     使いやすいトランスクリバスの簡易版は<ref target="https://transkribus.eu/r/read/projects/">こちら</ref>です。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="8" type="chapter">
+            <head><s><seg xml:lang="en">Save and export your transcription</seg>
+               <seg xml:lang="ja">転記の保存と転送</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Press the “Save” button in the Main Menu to save the document in Transkribus.</seg><lb/>
+                  <seg xml:lang="ja">メインメニューの「保存（Save）」ボタンを押して、トランスクリバスに文書を保存します。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">If you click on the “Versions” button in the “Server” tab, you will see that a new version has been created.
+                  This means that you can always access previous versions of a document should you need to.</seg><lb/>
+                  <seg xml:lang="ja">「サーバ（Server）」タブの「版（Versions）」ボタンをクリックすれば、新しく作成された版を見ることができます。
+                     必要であれば、いつでも文書の以前の版を開くことができるということです。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">You can also export the whole document at any point of the process by clicking the “Export document” button.</seg><lb/>
+                  <seg xml:lang="ja">作業のどの時点であれ、「文書の転送（Export document）」ボタンをクリックすれば、文書全体を転送することもできます。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="9" type="chapter">
+            <head><s><seg xml:lang="en">Use Handwritten Text Recognition (HTR) on your documents</seg>
+               <seg xml:lang="ja">手書きテキスト認識（HTR）の使用</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">It is simple to have your documents recognised by the computer. 
+                  You can start training a model with around 5,000 transcribed words of printed text or 15,000 words of handwritten text.</seg><lb/>
+                  <seg xml:lang="ja">コンピュータで文書を認識させることは簡単です。
+                     印刷されたテキストでは約5,000単語、手書きのテキストでは約15,000単語の転記をすれば、〔テキスト認識〕モデルの訓練を始めることができます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Once an HTR model has been trained for your documents,
+                  it can be applied via the “Run” button in the “Text Recognition” section in the “Tools” tab.
+                  You can select one or more pages of your documents and start recognition.</seg><lb/>
+                  <seg xml:lang="ja">
+                     自分の文書で訓練したHTRモデルは、「ツール（Tools）」タブの「テキスト認識（Text Recognition）」の「実行（Run）」ボタンで適用できます。
+                     自分の文書から1頁もしくは複数頁を選択し、認識を開始することができます。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">If you click “Run” and then “Select HTR model”, you can choose the model for the recognition and get more information about it.</seg><lb/>
+                  <seg xml:lang="ja">「実行（Run）」の後に「HTRモデルを選択（Select HTR model）」をクリックすれば、〔テキスト〕認識に利用するモデルを選択し、さらなる情報を得ることができます。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">On the left side of the window you can see an overview of the available models.</seg><lb/>
+                  <seg xml:lang="ja">ウィンドウの左側に、利用可能なモデルの概要を見ることができます。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">On the top right side of the window the details of the model are shown.</seg><lb/>
+                  <seg xml:lang="ja">ウィンドウの右側の上部に、モデルの詳細が見られます。</seg><lb/></s></p>
+            </div>
+            <div n="6" type="section">
+               <p><s><seg xml:lang="en">The graph on the bottom right signifies the accuracy of your model with the Character Error Rate (CER), i.e.
+                  the percentage of characters that have been transcribed incorrectly by HTR. The blue line represents the progress of the training.
+                  The red line represents the progress of evaluations on the Test Set of data which was set aside during the training process.</seg><lb/>
+                  <seg xml:lang="ja">右下のグラフは誤字率（CER）、すなわちHTRで不正確に転記された文字の割合によってモデルの精度を示しています。
+                     赤線は、訓練中のものを除いた訓練用データセットの評価の進み具合を表しています。</seg><lb/></s></p>
+            </div>
+            <div n="7" type="section">
+               <p><s><seg xml:lang="en">After the HTR has finished the results will appear directly on a new version of your document within Transkribus.
+                  It is possible to evaluate the accuracy of the automatic transcription using the “Compute Accuracy”-function in the “Tools” tab.</seg><lb/>
+                  <seg xml:lang="ja">HTRが終了した後、結果はトランスクリバス内の文書の新しい版に直接表示されます。
+                     「ツール（Tools）」タブの機能である「精度計算（Compute Accuracy）」を使い、自動転記の精度を評価することができます。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div n="10" type="chapter">
+            <head><s><seg xml:lang="en">Keyword Spotting</seg>
+               <seg xml:lang="ja">キーワード検索</seg></s></head>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Once you have a HTR model for your documents, you will be able to search them with the Keyword Spotting function.
+                  If available, of course you can also use one of the public models for this.</seg><lb/>
+                  <seg xml:lang="ja">自分の文書用のHTRモデルを作れば、キーワード検索機能を使うことができます。
+                     もし自分の文書に適用できるのであれば、もちろん公開モデルのキーワード検索機能を使うこともできます。</seg><lb/></s></p>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">First, run the HTR model on your documents to produce an automatic transcript.</seg><lb/>
+                  <seg xml:lang="ja">まず、自分の文書にHTRモデルを実行し、自動転記をしてください。</seg><lb/></s></p>
+            </div>
+            <div n="3" type="section">
+               <p><s><seg xml:lang="en">Then open the Keyword Spotting function with the binoculars button shown in Figure 18.</seg><lb/>
+                  <seg xml:lang="ja">それから、図18の双眼鏡ボタンでキーワード検索機能を開きます。</seg><lb/></s></p>
+            </div>
+            <div n="4" type="section">
+               <p><s><seg xml:lang="en">In the window which opens up choose the “KWS” tab.</seg><lb/>
+                  <seg xml:lang="ja">開いたウィンドウで「キーワード検索（KWS）」タブを選択してください。</seg><lb/></s></p>
+            </div>
+            <div n="5" type="section">
+               <p><s><seg xml:lang="en">Simply type the word you would like to search for in the “Keyword 1” box and press the “Search” button.</seg><lb/>
+                  <seg xml:lang="ja">「キーワード１（Keyword 1）」ボックスに検索したいキーワードをそのまま入力し、「検索（Search）」ボタンを押してください。</seg><lb/></s></p>
+            </div>
+            <div n="6" type="section">
+               <p><s><seg xml:lang="en">A confirmation window will pop-up. Click “Yes” to start your Keyword Spotting query</seg><lb/>
+                  <seg xml:lang="ja">確認用ウィンドウが開きます。「はい（Yes）」をクリックし、キーワード検索を始めてください。</seg><lb/></s></p>
+            </div>
+            <div n="7" type="section">
+               <p><s><seg xml:lang="en">Once your search query is finished double-click the date and numerical value in the “Created” column to access your search results</seg><lb/>
+                  <seg xml:lang="ja">検索が終了したら「作成済（Created）」列のデータと数値をダブルクリックし、検索結果を入手してください。</seg><lb/></s></p>
+            </div>
+            <div n="8" type="section">
+               <p><s><seg xml:lang="en">The “Keyword Spotting Results” window will show you a list of places where that keyword appears.</seg><lb/>
+                  <seg xml:lang="ja">「キーワード検索結果（Keyword Spotting Results）」ウィンドウに、キーワードが現れた箇所の一覧が示されます。</seg><lb/></s></p>
+            </div>
+         </div>
+         <div>
+            <head><s><seg xml:lang="en">Credits</seg>
+               <seg xml:lang="ja">著作権</seg></s></head>
+            <p>
+               <s><seg xml:lang="en">We would like to thank the many users who have contributed their feedback to help improve the Transkribus software.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスのソフトウェアを改善する助けとなる感想を寄せてくださる利用者の皆様に感謝いたします。</seg><lb/></s>
+            </p>
+            <div n="1" type="section">
+               <p><s><seg xml:lang="en">Transkribus and the technology behind it are made available via the following projects and sites:</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスとその背後にある技術は、下記のプロジェクトとサイトから利用することができます。</seg><lb/></s></p>
+               <div n="1" type="subsection">
+                  <p><ref target="https://readcoop.eu/">https://readcoop.eu/</ref></p>
+               </div>
+               <div n="2" type="subsection">
+                  <p><ref target="https://transcriptorium.eu/">https://transcriptorium.eu/</ref></p>
+               </div>
+               <div n="3" type="subsection">
+                  <p><ref target="https://github.com/transkribus/">https://github.com/transkribus/</ref></p>
+               </div>
+            </div>
+            <div n="2" type="section">
+               <p><s><seg xml:lang="en">Contact</seg><lb/>
+                  <seg xml:lang="ja">問合せ</seg><lb/></s></p>
+               <div n="1" type="subsection">
+                  <p><s><seg xml:lang="en">The Transkribus Team: <ref target="info@readcoop.eu">info@readcoop.eu</ref></seg><lb/>
+                     <seg xml:lang="ja">トランスクリバスのチーム: <ref target="info@readcoop.eu">info@readcoop.eu</ref></seg><lb/></s></p>
+               </div>
+            </div>
+            <div>
+               <p>
+               <s><seg xml:lang="en">The Transkribus Platform is provided by the European Cooperative READ-COOP SCE.</seg><lb/>
+                  <seg xml:lang="ja">トランスクリバスの環境（プラットフォーム）は、欧州協同組合READ-COOP SCEによって提供されています。</seg><lb/></s>
+            </p>
+            <p>
+               <s><seg xml:lang="en">Until June 2019 Transkribus was financed as part of the Horizon 2020 READ-project under grant agreement No. 674943.</seg><lb/>
+                  <seg xml:lang="ja">2019年6月まで、the Horizon 2020 READ-projectの一部として助成契約番号674943でトランスクリバスは資金援助を受けていました。</seg><lb/></s>
+            </p>
+            </div>
+         </div>                   
+      </body>
+   </text>
+</TEI>                 
