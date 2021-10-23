@@ -50,7 +50,7 @@
             </p>
             <div n="1" type="section">
                <p><s><seg xml:lang="en">Transcribe documents for a scholarly edition</seg><lb/>
-                  <seg xml:lang="ja">学術的な校訂のために文書[document]を転写する[transcribe]こと。</seg><lb/></s></p>
+                  <seg xml:lang="ja">学術的な校訂のために文書［document］を転写する［transcribe］こと。</seg><lb/></s></p>
             </div>
             <div n="2" type="section">
                <p><s><seg xml:lang="en">Create training data to feed the Handwritten Text Recognition (HTR+) system 
@@ -70,8 +70,8 @@
             <div n="5" type="section">
                <p><s><seg xml:lang="en">The platform lives from the community. 
                   The more data uploaded to Transkribus, the more efficient the program and especially the Handwritten Text Recognition will get</seg><lb/>
-                  <seg xml:lang="ja">Transkribusのプラットフォーム[環境基盤、platform]は利用者の皆様に支えられています。
-                     より多くのデータ[情報、data]がTranskribusにアップロード［転送、upload］されれば、Transkribusのプログラム［処理、program］、特に手書きテキスト認識の効率が向上します。</seg><lb/></s></p>
+                  <seg xml:lang="ja">Transkribusのプラットフォーム［環境基盤、platform］は利用者の皆様に支えられています。
+                     より多くのデータ［情報、data］がTranskribusにアップロード［転送、upload］されれば、Transkribusのプログラム［処理、program］、特に手書きテキスト認識の効率が向上します。</seg><lb/></s></p>
             </div>
             <div>
                <p><s><seg xml:lang="en">Transkribus is a research infrastructure,
@@ -124,13 +124,13 @@
                <p><s><seg xml:lang="en">If you use MacOS an error message may appear when you try to open Transkribus for the first time. To remedy this:
                   right click the Track Pad to open the Context Menu and add a security exception for Transkribus.</seg><lb/>
                   <seg xml:lang="ja">MacOSで初めてTranskribusを開いた時にエラーメッセージ［警告、error message］が表示された場合、
-                     トラックパッド[触操盤、Track Pad]を右押しして「コンテクストメニュー［環境操作一覧、Context Menu］」を開き、
+                     トラックパッド［触操盤、Track Pad］を右押しして「コンテクストメニュー［環境操作一覧、Context Menu］」を開き、
                      Transkribusをセキュリティ［安全、security］上の例外に設定してください。</seg><lb/></s></p>
             </div>
          </div>
             <div n="4" type="section">
                <p><s><seg xml:lang="en">Once you have downloaded Transkribus, make sure you unzip the file. The program cannot be started from the zipped file.</seg><lb/>
-                  <seg xml:lang="ja">Transkribusをダウンロードしたら、必ずファイル［書類一式、file］を展開［解凍］してください。展開しないとプログラムが始まりません。</seg><lb/></s></p>
+                  <seg xml:lang="ja">Transkribusをダウンロードしたら、必ずファイル［書類一式、file］を展開〔解凍〕してください。展開しないとプログラムが始まりません。</seg><lb/></s></p>
            </div>
          <div n="4" type="chapter">
             <head><s><seg xml:lang="en">Open Transkribus</seg>
@@ -203,7 +203,7 @@
                   Use the “User Manager” button in the “Server” tab to add users to your collection.
                   You can only share collections with users who have a Transkribus account.</seg><lb/>
                   <seg xml:lang="ja">初期設定では、Transkribusにアップロードされた文書は全て個人用となります。
-                     自分の文書を見る権限を他の利用者に与えることもできます。 「サーバー（Server）」タブにある「利用者管理［User Manager］」ボタンを押し、自分のコレクションに他の利用者を加えてください。
+                     自分の文書を見る権限を他の利用者に与えることもできます。 「サーバー［Server］」タブにある「利用者管理［User Manager］」ボタンを押し、自分のコレクションに他の利用者を加えてください。
                      コレクションの共有ができるのは、Transkribusのアカウント［利用口座、account］をもっている利用者のみです。</seg><lb/></s></p>
             </div>
          </div>
@@ -266,7 +266,7 @@
                <seg xml:lang="ja">転写の保存と出力</seg></s></head>
             <div n="1" type="section">
                <p><s><seg xml:lang="en">Press the “Save” button in the Main Menu to save the document in Transkribus.</seg><lb/>
-                  <seg xml:lang="ja">上欄の「保存［Save］」ボタンを押すと、Transkribus内に文書〔行設定や文字テキストが保存されます。</seg><lb/></s></p>
+                  <seg xml:lang="ja">上欄の「保存［Save］」ボタンを押すと、Transkribus内に文書〔行設定や文字テキスト〕が保存されます。</seg><lb/></s></p>
             </div>
             <div n="2" type="section">
                <p><s><seg xml:lang="en">If you click on the “Versions” button in the “Server” tab, you will see that a new version has been created.
